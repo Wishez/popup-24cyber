@@ -1,0 +1,2271 @@
+@import "config/breakpoints.scss";
+@import "breakpoint";
+$i: !important;
+
+.league-name {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #333b4e;
+    text-align: center;
+}
+.main-league .viewers {
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: (14em / 16);
+    color: rgba(0, 0, 0, 0.35);
+    line-height: 1px;
+}
+.main-league .line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    top: 57px;
+}
+.main-league .left {
+    float: right;
+    background: #e4e4e4;
+    background: linear-gradient(to left, #e4e4e4, rgba(206, 206, 206, 0.12));
+}
+.main-league .right {
+    float: right;
+    background: #e4e4e4;
+    background: linear-gradient(to right, #e4e4e4, rgba(206, 206, 206, 0.12));
+}
+.main-league .info {
+    font-size: (14em / 16);
+    text-align: center;
+}
+.main-league .info > * {
+    display: block;
+    margin-top: 8px;
+    line-height: 1;
+}
+.main-league .info > .type {
+    color: #333b4e;
+}
+.main-league .info > .date {
+    color: #989898;
+}
+.main-league .info > .fa {
+    margin-top: 20px;
+    color: #e9df70;
+    font-size: 16px;
+}
+.main-league .socials {
+    display: inline-block;
+    min-width: 70%;
+    margin-top: (45em / 16);
+    @include breakpoint($md-up) {
+        float: right;
+    }
+    @include breakpoint($sm-less) {
+        margin-top: (20em / 16);
+        min-width: auto;
+        width: auto;
+    }
+}
+
+.main-league .socials > .fa {
+    position: relative;
+    color: #333b4e;
+    float: left;
+    margin-right: 5px;
+    top: 3px;
+}
+.main-league .socials > .social {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+}
+.main-league .socials > .social > .type {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #3c67a7;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.main-league .socials > .social > .reposts {
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.35);
+    margin-left: 7px;
+}
+.match-details {
+    position: relative;
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    margin-top: 28px;
+    margin-bottom: 50px;
+}
+.match-details > .team {
+    position: relative;
+}
+.match-details > .team > .info {
+    height: 90px;
+    width: 100%;
+    position: relative;
+    display: block;
+    -webkit-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+}
+.match-details > .team > .info:hover {
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+}
+.votes .team-left {
+    border-right: 1px dashed #fff;
+}
+.match-details > .team-left > .info > .line {
+    left: 208px;
+}
+.match-details > .team-right > .info > .line {
+    right: 208px;
+}
+.match-details > .team > .info > .line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e4e4e4;
+}
+.match-details > .team > .info > .name {
+    position: relative;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #3a3f4c;
+    line-height: 1;
+    white-space: nowrap;
+    max-width: 50%;
+    max-width: calc(100% - 275px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.match-details > .team > .info > .logo {
+    position: relative;
+    background-image: url("https://24cyber.ru/img/logos/Alliance2016.png");
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 17.5px;
+}
+.match-details > .team-left > .info > .logo,
+.team-left__logo_covered {
+    float: left;
+    margin-left: 40px;
+}
+.match-details > .team-right > .info > .logo {
+    float: right;
+    margin-right: 40px;
+}
+.match-details > .team > .info > .flag {
+    position: relative;
+    width: 25px;
+    height: 18px;
+    background-image: url("https://24cyber.ru/img/flags/us.png");
+    background-size: cover;
+    border: 1px solid #b5b5b5;
+    top: 36px;
+}
+.match-details > .team-left > .info > .flag {
+    margin-left: 56px;
+    float: left;
+}
+.match-details > .team-right > .info > .flag {
+    margin-right: 56px;
+    float: right;
+}
+.match-details > .team > .players {
+    position: relative;
+    overflow: hidden;
+}
+.match-details > .team > .players > .player {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    width: calc(100% / 5);
+    background-color: #333b4e;
+
+    background-image: url("https://24cyber.ru/img/logos/SumaiL_The_Summit_3.jpg");
+    border-right: 1px solid #444548;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.match-details > .team > .players > .player:last-child {
+    border-right: none;
+}
+.match-details > .team > .players > .player > .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.54),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    );
+}
+.match-details > .team > .players > .player > .info {
+    position: absolute;
+    width: 100%;
+    height: 12px;
+}
+.match-details > .team > .players > .player > .info > .flag {
+    position: relative;
+    background-image: url("https://24cyber.ru/img/flags/us.png");
+    background-size: cover;
+    border: 1px solid #4e4e4e;
+    float: left;
+}
+.match-details > .team > .players > .player > .info > .name {
+    float: left;
+    font-family: "Open-Sans-Semibold";
+    color: #fff;
+    line-height: 1;
+    overflow: hidden;
+}
+.match-details > .status {
+    position: relative;
+}
+.match-details > .status > .vs {
+    color: #333b4e;
+    opacity: 0.35;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    display: inline-block;
+}
+.match-details > .status > .live {
+    background-color: #2dc86f;
+    box-shadow: 0 0 20px #2dc86f;
+}
+.match-details > .status > .type {
+    font-family: "Open-Sans";
+    font-weight: bold;
+    font-size: 9px;
+    color: #2dc86f;
+}
+.match-details > .status > .score {
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #333b4e;
+}
+.footer {
+    margin-top: 100px;
+}
+.game-stat {
+    margin-top: 42px;
+    width: 100%;
+    display: inline-block;
+    & .content {
+        padding-top: 2.5em;
+    }
+}
+.game-stat > .head {
+    position: relative;
+    height: 112px;
+    width: 100%;
+    text-align: center;
+}
+.game-stat > .head > .team {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.csgo-stat > .head > .team-left {
+    background-color: rgba(54, 129, 197, 0.8);
+    background: linear-gradient(
+        to left,
+        rgba(54, 129, 197, 0.8),
+        rgba(54, 129, 197, 0.41),
+        rgba(54, 129, 197, 0.05)
+    );
+}
+.csgo-stat > .head > .team-right {
+    background-color: rgba(240, 180, 18, 0.8);
+    background: linear-gradient(
+        to right,
+        rgba(240, 180, 18, 0.8),
+        rgba(240, 180, 18, 0.41),
+        rgba(240, 180, 18, 0.05)
+    );
+}
+.dota-stat > .head > .team-left {
+    background-color: rgba(45, 200, 111, 0.8);
+    background: linear-gradient(
+        to left,
+        rgba(45, 200, 111, 0.8),
+        rgba(45, 200, 111, 0.41),
+        rgba(45, 200, 111, 0.05)
+    );
+}
+.dota-stat > .head > .team-right {
+    background-color: rgba(200, 114, 115, 0.8);
+    background: linear-gradient(
+        to right,
+        rgba(200, 114, 115, 0.8),
+        rgba(200, 114, 115, 0.41),
+        rgba(200, 114, 115, 0.05)
+    );
+}
+.game-stat > .head > .team > .logo {
+    width: 75px;
+    height: 75px;
+    background-image: url("https://24cyber.ru/img/logos/Alliance2016.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    margin-top: 18.5px;
+}
+.game-stat > .head > .team > .info {
+    position: relative;
+    margin-top: 35px;
+    font-family: "Open-Sans";
+    display: block;
+}
+.game-stat > .head > .team > .info > .name {
+    position: relative;
+    color: #333b4e;
+    font-size: 24px;
+    line-height: 1;
+    display: block;
+}
+.game-stat > .head > .team-left > .info > * {
+    text-align: right;
+}
+.game-stat > .head > .team-right > .info > * {
+    text-align: left;
+}
+.game-stat > .head > .team > .info > .side {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    margin-top: 5px;
+    display: block;
+}
+.game-stat > .head > .team-left > .info {
+    float: right;
+}
+.game-stat > .head > .team-right > .info {
+    float: left;
+}
+.game-stat > .head > .stat-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.game-stat > .head > .stat-container > .stat-box {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+.game-stat > .head > .stat-container > .stat-box > .game-selecter {
+    top: -13.5px;
+}
+.game-stat > .head > .stat-container > .stat-box > .over {
+    position: relative;
+    font-size: 14px;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    top: -11px;
+}
+.game-stat > .head > .stat-container > .stat-box > .scores {
+    display: inline-block;
+    line-height: 1.2em;
+}
+.game-stat > .head > .stat-container > .stat-box > .scores > .score {
+    position: relative;
+    float: left;
+    font-family: "Open-Sans";
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    top: 7px;
+}
+.game-stat > .head > .stat-container > .stat-box > .scores > .left {
+    margin-right: 15px;
+}
+.game-stat > .head > .stat-container > .stat-box > .scores > .right {
+    margin-left: 15px;
+}
+.game-stat > .head > .stat-container > .stat-box > .scores > .time {
+    float: left;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    font-family: "Open-Sans-Semibold";
+    font-size: 14px;
+    color: #3a4459;
+    line-height: 1;
+    border: 1px solid #cccccc;
+}
+.game-stat > .head > .stat-container > .stat-box > .stat-close {
+    margin: auto;
+    padding: 8px 22px;
+    line-height: 1;
+    width: 205px;
+    background-color: #f9fafa;
+    border: 1px solid #e4e4e4;
+    border-radius: 16px;
+    -webkit-transition: 0.3s background-color;
+    transition: 0.3s background-color;
+    display: block;
+}
+.game-stat > .head > .stat-container > .stat-box > .stat-close:hover {
+    background-color: #ececec;
+}
+.game-stat > .head > .stat-container > .stat-box > .stat-close > .text {
+    color: rgba(51, 51, 51, 0.7);
+}
+.game-stat > .head > .stat-container > .stat-box > .stat-close > .fa {
+    font-size: (14em / 16);
+    color: #353e52;
+}
+.content > .round-stats {
+    display: inline-block;
+    width: 100%;
+}
+.csgo-stat > .content > .round-stats {
+    margin-top: 13px;
+}
+.game-stat > .content > .round-stats > .first {
+    border-right: 1px solid #e4e4e4;
+}
+.game-stat > .content > .round-stats > .half > .rounds {
+    display: block;
+    width: 100%;
+}
+.csgo-stat > .content > .round-stats > .half > .rounds {
+    height: 38px;
+}
+.dota-stat > .content > .round-stats > .first {
+    border-bottom: 3px solid #2dc86f;
+}
+.dota-stat > .content > .round-stats > .second {
+    border-bottom: 3px solid #c87273;
+}
+.game-stat > .content > .round-stats > .half > .rounds > .stats > .round {
+    float: left;
+    width: 20px;
+    height: 15px;
+    margin-top: 11.5px;
+    margin-left: 7px;
+}
+.game-stat
+    > .content
+    > .round-stats
+    > .second
+    > .rounds
+    > .stats
+    > .round:first-child {
+    margin-left: 0;
+}
+.game-stat > .content > .round-stats > .first > .rounds > .stats {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+}
+.game-stat > .content > .round-stats > .second > .rounds > .stats {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+}
+.csgo-stat > .content > .round-stats > .first {
+    border-bottom: 5px solid #3681c5;
+}
+.csgo-stat > .content > .round-stats > .second {
+    border-bottom: 5px solid #f0b412;
+}
+.csgo-stat > .content > .players > .team-players > .stats {
+    width: 100%;
+    border-collapse: separate;
+}
+.csgo-stat > .content > .players > .team-players > .stats th {
+    text-align: center;
+    padding: 22px 10px;
+    color: #333b4e;
+    font-size: 14px;
+    font-family: "Open-Sans";
+    font-weight: bold;
+}
+.csgo-stat > .content > .players > .team-players > .stats td {
+    text-align: center;
+    font-family: "Open-Sans-Semibold";
+    font-size: 14px;
+    color: #555555;
+}
+.csgo-stat
+    > .content
+    > .players
+    > .team-players
+    > .stats
+    tr:nth-child(even)
+    > td {
+    background-color: #f3f3f3;
+}
+.csgo-stat
+    > .content
+    > .players
+    > .players-left
+    > .stats
+    tr:nth-child(2)
+    > td:last-child {
+    border-radius: 0 14px 0 0;
+}
+.csgo-stat
+    > .content
+    > .players
+    > .players-right
+    > .stats
+    tr:nth-child(2)
+    > td:first-child {
+    border-radius: 14px 0 0 0;
+}
+.csgo-stat > .content > .players > .team-players > .stats .player-name {
+    text-align: left;
+    padding: 19px 10px;
+}
+.csgo-stat > .content > .players > .team-players > .stats tbody {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.dota-stat > .content > .round-stats > .half > .bottom {
+    border-bottom: 1px solid #e4e4e4;
+}
+.dota-stat > .content > .round-stats > .half > .rounds > .pick-bans {
+    display: inline-block;
+    height: 100%;
+}
+.dota-stat
+    > .content
+    > .round-stats
+    > .half
+    > .rounds
+    > .pick-bans
+    > .pick-ban-block {
+    background-size: cover;
+}
+.dota-stat > .content > .round-stats > .half > .rounds > .pick-bans > .pick {
+    position: relative;
+    border-radius: 2px;
+    background-color: #cacaca;
+}
+.dota-stat
+    > .content
+    > .round-stats
+    > .half
+    > .rounds
+    > .pick-bans
+    > .pick
+    > .num {
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+}
+.dota-stat
+    > .content
+    > .round-stats
+    > .half
+    > .rounds
+    > .pick-bans
+    > .pick:first-child {
+    margin-left: 0;
+}
+.dota-stat > .content > .round-stats > .half > .rounds > .pick-bans > .ban {
+    position: relative;
+    border-radius: 2px;
+    background-color: #000;
+}
+.dota-stat
+    > .content
+    > .round-stats
+    > .half
+    > .rounds
+    > .pick-bans
+    > .ban
+    > .num {
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #e86273;
+    position: absolute;
+}
+.dota-stat
+    > .content
+    > .round-stats
+    > .half
+    > .rounds
+    > .pick-bans
+    > .ban:first-child {
+    margin-left: 0;
+}
+.dota-stat > .content > .players {
+    width: 100%;
+}
+.dota-stat > .content > .players > .team-players {
+    width: 100%;
+}
+.dota-stat > .content > .players > .team-players th {
+    color: #333b4e;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.dota-stat > .content > .players > .team-players th i.fa {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: #14bf68;
+}
+.dota-stat > .content > .players > .team-players td {
+    color: #555555;
+    font-family: "Open-Sans-Semibold";
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 15px;
+}
+.dota-stat > .content > .players > .team-players .items {
+    font-size: 0;
+    min-width: 290px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.dota-stat > .content > .players > .team-players .items > .item {
+    position: relative;
+    width: 45px;
+    height: 31px;
+    border-radius: 3px;
+    background-image: url("https://24cyber.ru/img/items/220.png");
+    background-size: cover;
+    display: inline-block;
+    margin-left: 2px;
+    background-color: #bcbcbc;
+}
+.dota-stat > .content > .players > .team-players .items > .item > .time {
+    position: absolute;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    bottom: 5px;
+    right: 9px;
+}
+.dota-stat > .content > .players > .team-players .player {
+    text-align: left;
+    min-width: 200px;
+}
+.dota-stat > .content > .players > .team-players .player > .hero {
+    width: 52px;
+    height: 32px;
+    background-image: url("https://24cyber.ru/img/heroes/39.png");
+    background-size: cover;
+    border-radius: 2px;
+    float: left;
+}
+.dota-stat > .content > .players > .team-players .player > .name {
+    float: left;
+    font-family: "Open-Sans-Semibold";
+    font-size: 14px;
+    margin-left: 15px;
+    line-height: 32px;
+}
+.dota-stat > .content > .players > .radiant .player > .name {
+    max-width: 100px;
+    overflow-x: hidden;
+    color: #2dc86f;
+}
+.dota-stat > .content > .players > .dire .player > .name {
+    color: #c87273;
+}
+.dota-stat > .content > .players > .team-players tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.dota-stat > .content > .players > .team-players .gold {
+    color: #decf31;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    font-size: 14px;
+}
+.dota-stat > .content > .players > .radiant tr:nth-child(n + 2) {
+    border-left: 2px solid #2dc86f;
+}
+.dota-stat > .content > .players > .dire tr:nth-child(n + 2) {
+    border-left: 2px solid #c87273;
+}
+.dota-stat > .content > .stats {
+    padding: 20px 20px;
+}
+.dota-stat > .content > .stats .map {
+    height: 310px;
+    width: 318px;
+    border-radius: 14px;
+}
+.dota-stat > .content > .stats .map img {
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+.stream-head {
+    width: 100%;
+    margin-top: 50px;
+}
+.stream-head > .icon-camera {
+    float: left;
+}
+.stream-head > .title {
+    float: left;
+    color: #333b4e;
+    font-family: "Open-Sans-Light";
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 17px;
+    line-height: 1;
+}
+.stream-head > .title > .bold {
+    font-weight: bold;
+}
+.stream-head > .notification {
+    display: block;
+    float: right;
+    color: #7c7c7c;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    background: transparent;
+    cursor: pointer;
+}
+.stream-head > .notification > .fa {
+    font-size: 13px;
+    margin-right: 6px;
+}
+.bk-head {
+    margin-top: 4em;
+    @include breakpoint($xs) {
+        margin-top: 0;
+    }
+}
+.bk-head .icon {
+    display: inline-block;
+}
+.bk-head > .title {
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    font-family: "Open-Sans";
+    color: #333b4e;
+}
+.bk-head > .line {
+    position: absolute;
+    width: (365em / 16);
+    height: 1px;
+    background-color: rgba(181, 181, 181, 0.24);
+    background: linear-gradient(
+        to left,
+        rgba(181, 181, 181, 0.24),
+        rgba(181, 181, 181, 0.83)
+    );
+    bottom: 0;
+    left: (57em / 16);
+}
+.votes {
+    width: 100%;
+    background-color: #333b4e;
+    background: linear-gradient(to left, #333b4e 0%, #2dc86f 100%);
+    height: auto;
+    overflow: hidden;
+    padding: 0 1em;
+    border-radius: 17px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.votes > .team {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0.5em 0;
+}
+.votes > .team > .logo {
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    background-image: url("https://24cyber.ru/img/logos/Alliance2016.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.votes > .team > .flag {
+    background-image: url("https://24cyber.ru/img/flags/us.png");
+    background-size: cover;
+    width: 18px;
+    height: 14px;
+}
+.votes > .team > .name {
+    line-height: 1;
+    font-weight: bold;
+    color: #fff;
+    @include breakpoint($xs) {
+        margin-bottom: 0 $i;
+    }
+}
+.votes > .team > .vote-num {
+    position: relative;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.votes > .team > .vote {
+    position: relative;
+    font-family: "Open-Sans-Semibold";
+    line-height: 1;
+    color: #4d5364;
+    font-size: 11px;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+.votes > .team-left > .flag {
+    float: left;
+    margin-left: 10px;
+}
+.votes > .team-right > .flag {
+    float: right;
+    margin-right: 10px;
+}
+.votes > .team-left > .name {
+    float: left;
+}
+.votes > .team-right > .name {
+    float: right;
+}
+.votes > .team-left > .logo {
+    float: left;
+}
+.votes > .team-right > .logo {
+    float: right;
+}
+.votes > .team-right > .vote-num {
+    float: left;
+}
+.votes > .team-left > .vote-num {
+    float: right;
+}
+.votes > .team-right > .vote {
+    float: left;
+}
+.votes > .team-left > .vote {
+    float: right;
+}
+.bk-stats {
+    width: 100%;
+    height: 270px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.bk-stats > .scroller {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.bk_bet {
+    position: relative;
+    z-index: 0;
+}
+
+.bk-stats > .scroller > .bk > .bk-logo {
+    background-image: url("https://24cyber.ru/img/1xbet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: -webkit-fill-available;
+    max-width: 200px;
+    max-height: 80px;
+    min-width: 115px;
+    margin-top: 0;
+
+    @include breakpoint($sm-less) {
+      order: 4;
+    }
+
+    @include breakpoint($xxs) {
+        max-height: 48px;
+    }
+}
+
+.bk-stats > .scroller > .bk > .team-name {
+    font-family: "Open-Sans";
+    font-size: (14em / 16);
+    color: #333b4e;
+    line-height: (55em / 14);
+    &.cropped_line {
+        max-width: 85px;
+    }
+}
+.bk-stats > .scroller > .bk > .odd {
+    font-size: (13em / 16);
+
+    font-weight: bold;
+    color: #333b4e;
+}
+.bk-stats > .scroller > .bk > .odd > .left {
+    color: #2dc86f;
+}
+.bk-stats > .scroller > .bk > .bet {
+}
+.bk-stats > .scroller > .bk > .bet {
+    order: 5;
+    max-width: 135px;
+    text-align: center;
+    align-self: center;
+    padding: (5em / 11) 0;
+    margin: (6em / 11) (10em / 11);
+    position: relative;
+    font-family: "Open-Sans-Semibold";
+    font-size: (11em / 16);
+    border-radius: 10px;
+    color: #7c7c7c;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+}
+.bk-stats > .scroller > .selected{
+	background-color: #202736;
+	background: linear-gradient(to top, #202736, #414b61);
+}
+.bk-stats > .scroller > .selected > .team-name{
+	color: #fff;
+}
+.bk-stats > .scroller > .selected > .odd{
+	color: #fff;
+}
+.bk-logo {
+    // background-color: #202736;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 6px;
+}
+.scroller::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.scroller::-webkit-scrollbar-thumb {
+    background-color: #e4e5e7;
+    border-radius: 6px;
+    width: 6px;
+}
+.bk-chart {
+    width: 100%;
+    margin-top: 30px;
+}
+.last-matches {
+    margin-top: 30px;
+}
+.last-matches > .head {
+    width: 100%;
+    text-align: center;
+}
+.last-matches > .head > .match-icon {
+    margin-top: 30px;
+    display: inline-block;
+}
+.last-matches > .head > .title {
+    font-size: 24px;
+    font-family: "Open-Sans";
+    color: #333b4e;
+    margin: 0;
+    margin-top: 15px;
+    line-height: 1;
+}
+.last-matches > .head > .last {
+    margin-top: 20px;
+    color: #999999;
+    line-height: 1;
+    font-family: "Open-Sans";
+    font-size: 14px;
+}
+.last-matches > .content {
+    width: 100%;
+    display: inline-block;
+}
+.last-matches > .content .teams {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    background-image: url(/images/vs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &.display_mobile {
+        order: 1;
+    }
+}
+.last-matches > .content .teams > .team {
+    width: 50%;
+}
+.last-matches > .content .teams > .team > .logo {
+    background-image: url(https://24cyber.ru/img/logos/Alliance2016.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.last-matches > .content .teams > .team > .line {
+    height: 47px;
+    width: 100%;
+}
+.last-matches > .content .teams > .team-left > .win {
+    background-color: rgba(45, 200, 111, 0.67);
+    background: linear-gradient(
+        to left,
+        rgba(45, 200, 111, 0.67),
+        rgba(45, 200, 111, 0.47),
+        rgba(45, 200, 111, 0.27),
+        rgba(0, 0, 0, 0)
+    );
+}
+.last-matches > .content .teams > .team-right > .win {
+    background-color: rgba(45, 200, 111, 0.67);
+    background: linear-gradient(
+        to right,
+        rgba(45, 200, 111, 0.67),
+        rgba(45, 200, 111, 0.47),
+        rgba(45, 200, 111, 0.27),
+        rgba(0, 0, 0, 0)
+    );
+}
+.last-matches > .content .teams > .team > .line > .score {
+    font-family: "Open-Sans-Semibold";
+    font-size: (24em / 16);
+    color: #333b4e;
+    line-height: (47em / 24);
+}
+.last-matches > .content .teams > .team > .win > .score {
+    color: #fff;
+}
+.last-matches > .content .teams > .team-left > .line > .score {
+    float: right;
+    margin-right: 15px;
+}
+.last-matches > .content .teams > .team-right > .line > .score {
+    float: left;
+    margin-left: 15px;
+}
+.last-matches > .content .teams > .team-left > .logo {
+    float: left;
+}
+.last-matches > .content .teams > .team-right > .logo {
+    float: right;
+}
+.last-matches > .content .teams > .team > .name {
+    color: #333b4e;
+}
+.last-matches > .content .teams > .team-left > .name {
+    float: left;
+}
+.last-matches > .content .teams > .team-right > .name {
+    float: right;
+}
+.last-matches > .content .teams > .team-left {
+    float: left;
+}
+.last-matches > .content .teams > .team-right {
+    float: right;
+}
+.last-matches > .content .stats > .last {
+    width: (520em / 16);
+    background-color: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    float: left;
+    min-height: (245em / 16);
+}
+.last-matches > .content > .stats > .left {
+    border-radius: 0 14px 0 0;
+}
+.last-matches > .content > .stats > .right {
+    border-radius: 14px 0 0 0;
+}
+.last-matches > .content > .stats > .last > .matches {
+    width: 100%;
+}
+.last-matches > .content > .stats > .last > .matches tr {
+    height: (35em / 16);
+    border-bottom: 1px solid #e4e4e4;
+}
+.last-matches > .content > .stats > .last > .matches tr:nth-child(even) {
+    background-color: #fff;
+}
+.last-matches > .content > .stats > .last > .matches tr:last-child {
+    border-bottom: none;
+}
+.last-matches > .content > .stats > .last > .matches .vs {
+    font-size: (14em / 16);
+    color: rgba(51, 51, 51, 0.5);
+    padding: 0 (20em / 14);
+    width: (10em / 14);
+}
+.last-matches > .content > .stats > .last > .matches .team > .logo {
+    height: (22em / 16);
+    width: (20em / 16);
+    float: left;
+    background-image: url(https://24cyber.ru/img/logos/Alliance2016.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.last-matches > .content > .stats > .last > .matches .team > .flag {
+    height: (14em / 16);
+    width: (18em / 16);
+    border: 1px solid #c4c4c4;
+    background-image: url("https://24cyber.ru/img/flags/us.png");
+    float: left;
+    margin-left: (10em / 16);
+    background-size: cover;
+    margin-top: (4em / 16);
+}
+.last-matches > .content > .stats > .last > .matches .team > .name {
+    font-family: "Open-Sans-Semibold";
+    font-size: (13em / 16);
+    color: #333b4e;
+    float: left;
+    margin-left: (10em / 13);
+    line-height: (22em / 13);
+}
+.last-matches > .content > .stats > .last > .matches .league-logo {
+    background-image: url("https://24cyber.ru/img/logos/DreamHack_Masters_Malmo_2017.jpg");
+    width: (45em / 16);
+    height: (20em / 16);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.last-matches > .content > .stats > .last > .matches .date {
+    color: #999999;
+    font-size: (11em / 16);
+}
+.last-matches > .content > .stats > .last > .matches .score {
+    font-weight: bold;
+    color: #333b4e;
+}
+.last-matches > .content > .stats > .last > .matches .win {
+    color: #2dc86f;
+}
+.details {
+    line-height: 0.7;
+    max-width: (100em / 16);
+}
+
+.last-matches > .content > .stats > .details > .last-vs {
+    width: 100%;
+    text-align: center;
+    font-size: (14em / 16);
+    color: #999999;
+    line-height: 1.4;
+}
+.last-matches > .content > .stats > .details > .scores {
+    width: 100%;
+}
+.last-matches > .content > .stats > .details > .scores > .score {
+    font-size: (18em / 16);
+    color: #333b4e;
+    width: 50%;
+    float: left;
+    height: (40em / 18);
+}
+.last-matches > .content > .stats > .details > .scores > .score > .num {
+    line-height: (40em / 18);
+}
+.last-matches > .content > .stats > .details > .scores > .left > .num {
+    float: right;
+    margin-right: (10em / 18);
+}
+.last-matches > .content > .stats > .details > .scores > .right > .num {
+    float: left;
+    margin-left: (10em / 18);
+}
+.last-matches > .content > .stats > .details > .scores > .left {
+    background-color: rgba(45, 200, 111, 0.67);
+    background: linear-gradient(
+        to left,
+        rgba(45, 200, 111, 0.67),
+        rgba(45, 200, 111, 0)
+    );
+}
+.last-matches > .content > .stats > .details > .scores > .right {
+    background-color: rgba(45, 200, 111, 0.67);
+    background: linear-gradient(
+        to right,
+        rgba(45, 200, 111, 0.67),
+        rgba(45, 200, 111, 0)
+    );
+}
+.last-matches > .content > .stats > .details > .scores > .score:not(.win) {
+    background: #fff;
+}
+.last-matches > .content > .stats > .details > .scores > .win > .num {
+    font-weight: bold;
+    color: #fff;
+}
+@media screen and (min-width: (1200em / 16)) {
+    .league-name {
+        font-size: (40em / 16);
+    }
+    .main-league .viewers {
+        margin-top: 50px;
+    }
+    .match-details {
+        height: 130px;
+    }
+    .match-details > .team {
+        width: 48%;
+        width: calc((100% - 30px) / 2);
+        height: 100%;
+        float: left;
+    }
+    .match-details > .team > .players {
+        width: 87%;
+        border-radius: 14px;
+    }
+    .match-details > .team-left > .players {
+        float: left;
+        margin-left: 17px;
+    }
+    .match-details > .team-right > .players {
+        float: right;
+        margin-right: 15px;
+    }
+    .match-details > .team > .info > .name {
+        font-size: 28px;
+        top: 35px;
+        height: 35px;
+    }
+    .match-details > .team-right > .info > .name {
+        float: left;
+        left: 53px;
+    }
+    .match-details > .team-left > .info > .name {
+        float: right;
+        right: 53px;
+    }
+    .match-details > .status {
+        float: left;
+        width: 30px;
+        height: 100%;
+    }
+    .match-details > .status > .vs {
+        margin-top: 45px;
+        line-height: 1;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    .match-details > .status > .live {
+        width: 8px;
+        height: 8px;
+        margin-top: 10px;
+        border-radius: 8px;
+        margin-left: 11px;
+    }
+    .match-details > .status > .type {
+        width: 100%;
+        text-align: center;
+        margin-top: 9px;
+        line-height: 1;
+    }
+    .match-details > .status > .score {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        margin-top: 4px;
+    }
+    .main-league .socials-holder {
+        float: right;
+    }
+    .game-stat > .head > .team-left > .logo {
+        float: right;
+        margin-right: 110px;
+    }
+    .game-stat > .head > .team-right > .logo {
+        float: left;
+        margin-left: 110px;
+    }
+    .game-stat > .head > .team-left > .info {
+        margin-right: 30px;
+    }
+    .game-stat > .head > .team-right > .info {
+        margin-left: 30px;
+    }
+    .game-stat > .content > .round-stats > .half {
+        width: 50%;
+        float: left;
+    }
+    .dota-stat > .content > .round-stats > .first > .rounds > .pick-bans {
+        padding-right: 110px;
+        float: right;
+    }
+    .dota-stat > .content > .round-stats > .second > .rounds > .pick-bans {
+        padding-left: 110px;
+        float: left;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .pick {
+        width: 77px;
+        height: 42px;
+        float: left;
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .pick
+        > .num {
+        font-size: 14px;
+        right: 6px;
+        bottom: 4px;
+    }
+    .dota-stat > .content > .round-stats > .half > .rounds > .pick-bans > .ban {
+        width: 50px;
+        height: 36px;
+        float: left;
+        margin-top: 9px;
+        margin-left: 1px;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .ban
+        > .num {
+        font-size: 11px;
+        right: 5px;
+        bottom: 6px;
+    }
+    .dota-stat > .content > .round-stats > .half > .rounds {
+        height: 54px;
+    }
+    .game-stat > .content > .round-stats > .half > .bottom {
+        border-top: 1px solid #e4e4e4;
+    }
+    .match-details > .team > .players > .player {
+        height: (81em / 16);
+    }
+    .match-details > .team > .players > .player > .info > .flag {
+        width: 17px;
+        height: 12px;
+        margin-left: 10px;
+    }
+    .match-details > .team > .players > .player > .info > .name {
+        font-size: 12px;
+        margin-left: 5px;
+        max-width: 98%;
+        max-width: calc(100% - (17px + 20px));
+    }
+    .match-details > .team > .players > .player > .info {
+        bottom: 12px;
+    }
+    .csgo-stat > .content > .players > .team-players {
+        width: 50%;
+        float: left;
+    }
+    .csgo-stat > .content > .players > .players-left {
+        padding-right: 15px;
+    }
+    .csgo-stat > .content > .players > .players-right {
+        padding-left: 15px;
+    }
+    .csgo-stat > .content > .players > .team-players > .stats .player-name {
+        padding-left: 52px;
+    }
+    .bk-head > .title {
+        font-size: (24em / 16);
+    }
+
+    .votes {
+        margin-top: 30px;
+    }
+    .votes > .team-left {
+        border-right: 1px dashed #fff;
+    }
+    .votes > .team > .logo {
+        margin-top: 6px;
+    }
+    .votes > .team-left > .logo {
+        margin-left: 25px;
+    }
+    .votes > .team-right > .logo {
+        margin-right: 25px;
+    }
+    .votes > .team > .flag {
+        margin-top: 12px;
+    }
+    .votes > .team > .name {
+        margin-top: (10em / 18);
+        font-size: (18em / 16);
+    }
+    .votes > .team-left > .name {
+        margin-left: 15px;
+    }
+    .votes > .team-right > .name {
+        margin-right: 15px;
+    }
+    .votes > .team-right > .vote-num {
+        margin-left: 30px;
+    }
+    .votes > .team-left > .vote-num {
+        margin-right: 30px;
+    }
+    .votes > .team > .vote {
+        margin-top: 5px;
+        padding: 8px 26px;
+    }
+    .votes > .team > .vote-num {
+        margin-top: 10px;
+        top: -4px;
+    }
+    .votes > .team-right > .vote {
+        margin-left: 30px;
+    }
+    .votes > .team-left > .vote {
+        margin-right: 30px;
+    }
+    .bk-stats > .scroller > .bk {
+        height: (55em / 16);
+        position: relative;
+    }
+
+    .bk-stats > .scroller > .bk > .odd {
+        margin: 0 35px;
+				text-align: center;
+    }
+    .bk-chart {
+        height: 270px;
+    }
+    .last-matches > .content .teams > .team > .logo {
+        width: 120px;
+        height: 85px;
+    }
+    .last-matches > .content .teams > .team-left > .logo {
+        margin-left: 40px;
+    }
+    .last-matches > .content .teams > .team-right > .logo {
+        margin-right: 40px;
+    }
+    .last-matches > .content .teams > .team > .line {
+        margin-top: 21.5px;
+    }
+    .last-matches > .content .teams > .team {
+        height: 90px;
+    }
+    .last-matches > .content .teams > .team > .name {
+        font-size: 22px;
+        line-height: 90px;
+    }
+    .last-matches > .content .teams > .team-left > .name {
+        margin-left: 35px;
+    }
+    .last-matches > .content .teams > .team-right > .name {
+        margin-right: 35px;
+    }
+    .last-matches > .content > .stats {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 35px;
+        position: relative;
+    }
+    .last-matches > .content > .stats > .left {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-left: 0;
+    }
+    .last-matches > .content > .stats > .right {
+        border-radius: 15px 0 0 0;
+        border-bottom-left-radius: 15px;
+        border-right: 0;
+    }
+    .last-matches > .content > .stats > .details {
+        width: 50%;
+        width: calc(100% - 520px * 2);
+        float: left;
+    }
+    .last-matches > .content > .stats > .details > .last-vs {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: (1199em / 16)) {
+    .league-name {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .main-league .viewers {
+        text-align: right;
+        top: 50px;
+        padding-right: 25px;
+    }
+    .match-details {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+    .match-details > .team {
+        width: 100%;
+    }
+    .match-details > .team > .players {
+        width: 100%;
+    }
+    .match-details > .team > .info > .name {
+        font-size: 20px;
+        top: 39px;
+    }
+    .match-details > .team-right > .info > .name {
+        float: right;
+        right: 53px;
+    }
+    .match-details > .team-left > .info > .name {
+        float: left;
+        left: 53px;
+    }
+    .match-details > .status {
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .match-details > .status > .vs {
+        order: 1;
+        line-height: 60px;
+        font-size: 40px;
+    }
+    .match-details > .status > .live {
+        order: 3;
+        width: 14px;
+        height: 14px;
+        background-color: #2dc86f;
+        border-radius: 8px;
+        box-shadow: 0 0 20px #2dc86f;
+        display: inline-block;
+    }
+    .match-details > .status > .type {
+        order: 4;
+        line-height: 60px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .match-details > .status > .score {
+        order: 2;
+        font-size: 22px;
+        line-height: 60px;
+        display: inline-block;
+        margin: 0 30px;
+    }
+    .socials-holder {
+        text-align: center;
+    }
+    .content > .players {
+        overflow: auto;
+    }
+    .game-stat > .head > .team-left > .logo {
+        position: absolute;
+        left: 0;
+    }
+    .game-stat > .head > .team-right > .logo {
+        position: absolute;
+        right: 0;
+    }
+    .game-stat > .head > .team-left > .info {
+        margin-right: 60px;
+    }
+    .game-stat > .head > .team-right > .info {
+        margin-left: 60px;
+    }
+    .scores > .score-mobile {
+        font-weight: bold;
+        color: #fff;
+    }
+    .scores > .score-mobile > .left {
+        margin-right: 10px;
+    }
+    .game-stat > .head > .stat-container > .stat-box > .stat-close {
+        margin-top: -5px;
+    }
+    .game-stat > .head > .stat-container > .stat-box > .scores {
+        position: relative;
+        top: -5px;
+    }
+    .dota-stat > .content > .round-stats > .half {
+        width: 100%;
+    }
+    .csgo-stat > .content > .round-stats {
+        white-space: nowrap;
+        overflow: auto;
+        font-size: 0;
+    }
+    .csgo-stat > .content > .round-stats > .half {
+        min-width: 50%;
+        display: inline-block;
+    }
+    .dota-stat > .content > .round-stats > .half > .rounds > .pick-bans {
+        text-align: center;
+        width: 100%;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .pick {
+        position: relative;
+        width: 42px;
+        height: 24px;
+        border-radius: 2px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .pick
+        > .num {
+        font-size: 9px;
+        right: 2px;
+        bottom: 2px;
+    }
+    .dota-stat > .content > .round-stats > .half > .rounds > .pick-bans > .ban {
+        width: 25px;
+        height: 16px;
+        margin-top: 0;
+        margin-left: 5px;
+        display: inline-block;
+    }
+    .dota-stat
+        > .content
+        > .round-stats
+        > .half
+        > .rounds
+        > .pick-bans
+        > .ban
+        > .num {
+        font-size: 8px;
+        right: 1px;
+        bottom: 1px;
+    }
+    .match-details > .team > .players > .player {
+        height: (145em / 16);
+    }
+    .match-details > .team > .players > .player > .info > .flag {
+        width: 11px;
+        height: 8px;
+        margin-left: 5px;
+        top: 2px;
+    }
+    .match-details > .team > .players > .player > .info > .name {
+        font-size: 10px;
+        margin-left: 2px;
+        width: 98%;
+        max-width: calc(100% - (11px + 10px));
+    }
+    .match-details > .team > .players > .player > .info {
+        bottom: 2px;
+    }
+    .csgo-stat > .content > .players > .team-players {
+        width: 100%;
+    }
+    .match-head {
+        display: inline-block;
+    }
+    .bk-head > .title {
+        font-size: (22em / 16);
+    }
+    .bk-head {
+        margin-top: (30em / 16);
+        width: 100%;
+    }
+    .votes {
+        margin-top: (10em / 16);
+    }
+    .votes > .team > .logo {
+        margin-top: (8em / 16);
+        margin-bottom: (5em / 16);
+    }
+    .votes > .team-left > .logo {
+        margin-left: (15em / 16);
+    }
+    .votes > .team-right > .logo {
+        margin-right: (15em / 16);
+    }
+    .votes > .team > .flag {
+        margin-top: (13em / 16);
+        margin-bottom: (10em / 16);
+    }
+    .votes > .team > .name {
+        margin-top: (14em / 13);
+        font-size: (13em / 16);
+        width: 50%;
+        width: calc(100% - 80px);
+        margin-bottom: (10em / 13);
+    }
+    .votes > .team-left > .name {
+        margin-left: (10em / 13);
+        text-align: left;
+    }
+    .votes > .team-right > .name {
+        margin-right: 5px;
+        text-align: right;
+    }
+    .votes > .team-right > .vote-num {
+        padding-left: 15px;
+    }
+    .votes > .team-left > .vote-num {
+        padding-right: 15px;
+    }
+    .votes > .team > .vote {
+        padding: 8px 15px;
+        margin-top: 5px;
+    }
+    .votes > .team > .vote-num {
+        margin-top: 5px;
+    }
+    .votes > .team-right > .vote {
+        margin-left: 10px;
+    }
+    .votes > .team-left > .vote {
+        margin-right: 10px;
+    }
+
+    .bk-stats > .scroller > .bk > .team-name {
+        line-height: 45px;
+        height: 45px;
+        width: 23%;
+        width: calc(50% - 73px / 2 - 10px);
+    }
+    .bk-stats > .scroller > .bk > .team-left {
+        order: 1;
+    }
+    .bk-stats > .scroller > .bk > .team-right {
+        order: 3;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .bk-stats > .scroller > .bk > .odd {
+        order: 2;
+        text-align: center;
+    }
+
+    .bk-chart {
+        height: (210em / 16);
+    }
+    .last-matches > .content .teams > .team > .logo {
+        width: (60em / 16);
+        height: (60em / 16);
+    }
+    .last-matches > .content .teams > .team-left > .logo {
+        margin-left: (25em / 16);
+    }
+    .last-matches > .content .teams > .team-right > .logo {
+        margin-right: (25em / 16);
+    }
+    .last-matches > .content .teams > .team > .line {
+        margin-top: (9em / 16);
+    }
+    .last-matches > .content .teams > .team {
+        width: 50%;
+        height: (65em / 16);
+    }
+    .last-matches > .content .teams > .team > .name {
+        font-size: (18em / 16);
+        color: #333b4e;
+    }
+    .last-matches > .content .teams > .team-left > .name {
+        margin-left: (15em / 18);
+        margin-top: 1em;
+    }
+    .last-matches > .content .teams > .team-right > .name {
+        margin-right: (15em / 18);
+    }
+    .last-matches > .content > .stats {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .last-matches > .content > .stats > .last {
+        width: 100%;
+        order: 2;
+        margin-top: (54em / 16);
+    }
+    .last-matches > .content > .stats > .details {
+        order: 1;
+        width: 100%;
+    }
+    .last-matches > .content > .stats > .details > .last-vs {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: (480em / 16)) {
+    .last-matches > .content .teams > .team > .name {
+        display: none;
+    }
+    .players > .player {
+        height: (90em / 16);
+    }
+}
+.block {
+    overflow: initial !important;
+}
+.stats .dota-stats-chart {
+    background-color: #f3f3f3;
+    border-radius: 14px;
+}
+.stats .dota-stats-chart > .chart-selecter {
+    width: 100%;
+    padding: 10px 35px;
+    text-align: center;
+}
+.stats .dota-stats-chart > .chart-selecter > .option {
+    display: inline-block;
+    padding: 8px 25px;
+    font-family: "Open-Sans";
+    font-weight: bold;
+    font-size: 16px;
+    color: #333b4e;
+    margin-left: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    line-height: 1;
+}
+.stats .dota-stats-chart > .chart-selecter > .selected {
+    color: #2dc86f;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+.stats .dota-stats-chart > .chart-selecter > .option:first-child {
+    margin-left: 0;
+}
+.stats .dota-stats-chart > .chart {
+    height: 250px;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+#bk-chart {
+    height: 100%;
+    padding-top: 10px;
+}
+.dota-game-map .dota-map .map .dire {
+    box-shadow: 0 0 4px #1d1c1c;
+    border: 2px solid #e24b4b;
+    background-color: rgba(241, 111, 111, 0.74);
+}
+.dota-game-map .dota-map .map .radiant {
+    box-shadow: 0 0 4px #1d1c1c;
+    border: 2px solid #419044;
+    background-color: rgba(112, 212, 116, 0.86);
+}
+.dota-game-map .dota-map .map .hero-on-map {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-left: -12.5px;
+    margin-bottom: -12.5px;
+    z-index: 5;
+    border-radius: 20px;
+}
+#dire-ancient-1 {
+    left: 73%;
+    top: 22%;
+}
+.map .color-dire {
+    background-color: #bf6364;
+    border: 2px solid #9a3b3c;
+}
+.map .tower {
+    width: 17px;
+    height: 17px;
+    z-index: 3;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-top: -8.5px;
+}
+.map .build {
+    position: absolute;
+    box-shadow: 0 0 3px #113217;
+}
+#dire-ancient-2 {
+    left: 71%;
+    top: 20%;
+}
+#dire-bot-3 {
+    left: 76%;
+    top: 32%;
+}
+#dire-bot-2 {
+    left: 77%;
+    top: 47%;
+}
+#dire-bot-1 {
+    left: 77%;
+    top: 61%;
+}
+#dire-mid-3 {
+    left: 66%;
+    top: 27%;
+}
+#dire-mid-2 {
+    left: 59%;
+    top: 37%;
+}
+#dire-mid-1 {
+    left: 49%;
+    top: 48%;
+}
+#dire-top-3 {
+    left: 64%;
+    top: 14%;
+}
+#dire-top-2 {
+    left: 43%;
+    top: 13%;
+}
+#dire-top-1 {
+    left: 21%;
+    top: 13%;
+}
+#radiant-ancient-2 {
+    left: 17%;
+    top: 83%;
+}
+#radiant-ancient-1 {
+    left: 15%;
+    top: 81%;
+}
+#radiant-bot-3 {
+    left: 25%;
+    top: 88%;
+}
+#radiant-bot-2 {
+    left: 43%;
+    top: 90%;
+}
+.map .inactive {
+    background-color: #312e2e;
+    border: 2px solid #1c1c1c;
+}
+#radiant-bot-1 {
+    left: 69%;
+    top: 88%;
+}
+#radiant-mid-3 {
+    left: 21%;
+    top: 76%;
+}
+#radiant-mid-2 {
+    left: 28%;
+    top: 68%;
+}
+#radiant-mid-1 {
+    left: 36%;
+    top: 59%;
+}
+#radiant-top-3 {
+    left: 10%;
+    top: 71%;
+}
+#radiant-top-2 {
+    left: 12%;
+    top: 55%;
+}
+#radiant-top-1 {
+    left: 12%;
+    top: 39%;
+}
+#dire-bot-rax-1 {
+    top: 27%;
+    left: 78%;
+}
+#dire-bot-rax-2 {
+    top: 27%;
+    left: 75%;
+}
+#dire-mid-rax-1 {
+    top: 22%;
+    left: 67%;
+}
+#dire-mid-rax-2 {
+    top: 25%;
+    left: 69%;
+}
+#dire-top-rax-1 {
+    top: 10%;
+    left: 67%;
+}
+#dire-top-rax-2 {
+    top: 14%;
+    left: 67%;
+}
+#radiant-bot-rax-1 {
+    top: 84%;
+    left: 23%;
+}
+#radiant-bot-rax-2 {
+    top: 88%;
+    left: 23%;
+}
+#radiant-mid-rax-1 {
+    top: 74%;
+    left: 18%;
+}
+#radiant-mid-rax-2 {
+    top: 77%;
+    left: 21%;
+}
+#radiant-top-rax-1 {
+    top: 72%;
+    left: 9%;
+}
+#radiant-top-rax-2 {
+    top: 72%;
+    left: 12%;
+}
+.map .rax {
+    width: 13px;
+    height: 13px;
+    z-index: 4;
+    opacity: 0.7;
+    border-radius: 2px;
+}
+.map .color-radiant {
+    background-color: #54a958;
+    border: 2px solid #377a37;
+}
+.dota-game-map .dota-map .map .hero-on-map .hero-img {
+    height: 22px;
+    width: 22px;
+    margin: auto;
+    margin-top: 5px;
+    background-size: cover;
+}
+.right .matches {
+    border: 0 !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
+.left .matches {
+    border: 0 !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+.viewMore {
+    text-align: center;
+    background-color: transparent;
+    background-image: url(/images/f545.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #bbbbbb;
+    width: (170em / 16);
+    margin: 1em auto 0;
+    display: inherit;
+    border: 0;
+    &_score {
+        height: (10em / 16);
+        width: (30em / 16);
+        background-position: center;
+        transform: translate(0, 100%);
+    }
+}
+
+.notification_active .fa-bell {
+    color: #e8c833;
+    animation: bounceBell 1s cubic-bezier(0, 0, 0.31, 0.73);
+}
+
+@keyframes bounceBell {
+    from {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(10deg);
+    }
+    45% {
+        transform: rotate(-10deg);
+    }
+    70% {
+        transform: rotate(9deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.matchStat {
+    min-height: (190em / 16);
+}
+
+#close-stats:disabled {
+    background-color: #e4e4e4;
+    &:hover {
+        background-color: currentColor;
+    }
+}
+
+.votes .vote {
+    background-color: #fff $i;
+    @include breakpoint($xs) {
+        margin-top: 0.5em $i;
+    }
+}
+.votes .team {
+    &-left .vote {
+        @include breakpoint($xxs) {
+            float: left $i;
+        }
+    }
+    &-right .vote {
+        @include breakpoint($xxs) {
+            float: right $i;
+        }
+    }
+}
+.votes .vote-num {
+    @include breakpoint($xs) {
+        margin-top: 0.5em $i;
+    }
+    @include breakpoint($xxs) {
+        margin-top: 1em $i;
+    }
+}
+.team .name {
+    width: auto $i;
+    @include breakpoint($xxs) {
+        width: 50% $i;
+    }
+}
+.votes > .team-left > .logo {
+    @include breakpoint($xxs) {
+        margin-left: 0;
+    }
+}
+.votes > .team-right > .logo {
+    @include breakpoint($xxs) {
+        margin-right: 0;
+    }
+}
+
+.mobileTeamSignification {
+    &__logo {
+        max-height: 65px;
+    }
+}
+
+.bk-stats > .scroller > .bk {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    cursor: pointer;
+    align-items: center;
+    overflow: hidden;
+
+    &:first-of-type {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+
+    }
+
+    &:last-of-type {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+    }
+    @include breakpoint($xs) {
+        height: auto;
+    }
+}
+
+.bk > .team-left  {
+	margin-left: 25px;
+
+}
+#bomb{
+    position: relative;
+    height: 30px;
+    margin: auto;
+    width: 33px;
+    top: -11px;
+    background-size: contain;
+}
+.none{
+    display: none;
+}
+.player-weapone{
+    height: 13px;
+    filter: invert(1);
+}
+.player-health{
+    position: relative;
+    width: 40px;
+    height: 13px;
+    background-color: #d6d3d3;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.player-health > .fill{
+    position: absolute;
+    height: 100%;
+    background-color: red;
+}
+.player-health > span{
+    color: #fff5f5;
+    z-index: 34;
+    position: relative;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    height: 12px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: arial;
+}
+.die{
+    height: 15px;
+    margin-left: 15px;
+}

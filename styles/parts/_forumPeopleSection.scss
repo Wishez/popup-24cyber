@@ -1,0 +1,99 @@
+.peopleGroupNavigationButton {
+    height: em(35, 14);
+    padding: 0 em(20, 14);
+}
+.forumPeopleSectionHead {
+    padding-left: 2.35em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+th.forumPeopleTable {
+
+    &Username {
+        width: 314px;
+        min-width: 314px;
+    }
+
+    &Role {
+        width: 208px;
+        min-width: 208px;
+    }
+
+    &Date {
+        width: 186px;
+        min-width: 186px;
+    }
+}
+
+td.forumPeopleTable {
+
+  &Actions {
+      padding-left: 1.3em;
+  }
+}
+
+.forumPeopleTable {
+    &Filter {
+        height: 71px;
+    }
+
+    &Body {
+        tr {
+            height: 81px;
+
+        }
+
+        td {
+          padding-top: .85em;
+        }
+    }
+
+    &Username {
+        padding-left: 3.7em $i;
+    }
+
+    &Role {
+        text-align: center;
+    }
+
+    &Date {
+        text-align: center;
+    }
+
+    &Threads {
+        text-align: center;
+    }
+
+    &Messages {
+        text-align: center;
+    }
+
+    &Actions {
+        &__email {
+            margin-right: 0.5em;
+        }
+
+        a {
+            transition-duration: 250ms;
+        }
+    }
+}
+
+.forumSectionTableHead {
+    height: 41px;
+}
+
+.peopleRoleSorter {
+    max-width: 163px;
+}
+
+.quantityPeopleNotesSelect {
+    &__button {
+        min-width: 79px;
+        height: 37px;
+    }
+}
+
+.forumPeopleSection {
+}

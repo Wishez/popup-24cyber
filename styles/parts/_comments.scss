@@ -1,0 +1,25 @@
+.commentsList {
+    padding: 1.2em;
+    padding-bottom: 0;
+    margin-bottom: -5px;
+}
+
+.userComment {
+  padding: .9em 1.4em 1.4em;
+  border-radius: 4px;
+
+  &__paragraph {
+    border-radius: 5px;
+    padding: 12px;
+    padding-right: 36px;
+    background-color: #f3f3f4;
+
+    &_croped {
+      height: (2px* 1.5* 14);
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 1em;
+  }
+}

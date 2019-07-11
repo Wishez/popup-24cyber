@@ -1,0 +1,26 @@
+.bigSearch {
+  padding: 4px 5px;
+
+  &_small {
+    max-width: 205px;
+  }
+
+  &__icon {
+    right: 17px;
+    top: 11px;
+    color: #333b4e;
+    opacity: .2;
+  }
+
+  &__input {
+    border: 0;
+    padding-left: 10px;
+    min-height: 34px;
+    background-color: #f3f3f4;
+    border-radius: 8px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

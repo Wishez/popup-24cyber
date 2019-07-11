@@ -1,0 +1,236 @@
+.list-view .summary {
+	display: block;
+	margin-bottom: 2em;
+}
+.wrap{
+	position: relative;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	background-color: #384155;
+}
+.wrap > .wrap-img{
+	width: 100%;
+	position: relative;
+	background-image: url('/img/news_img.png');
+	background-size: cover;
+	opacity: 0.25;
+}
+.wrap > .filter{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:  rgba(0, 0, 0, 0.59);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.04));
+}
+.wrap > .filter .page-title{
+	width: 100%;
+	text-align: center;
+	font-family: 'Open-Sans';
+	font-weight: bold;
+	color: #fff;
+	margin: 0;
+	line-height: 1;
+	font-size: 35px;
+	margin-top: 40px;
+	padding: 0;
+}
+.wrap > .filter .filter-wrap{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.wrap > .filter .filter-wrap .search-block{
+	width: 100%;
+	display: inline-block;
+}
+.wrap > .filter .filter-wrap .search-block .date-pick{
+	height: 40px;
+}
+.wrap > .filter .filter-wrap .search-block .date-pick input{
+	// $20px: (20em / 14);
+	border-radius: (20em / 14) 0 0 (20em / 14);
+	border: none;
+	padding-left: (20em / 14);
+	height: (40em / 14);
+	font-size: (14em / 16);
+	color: white;
+}
+.wrap > .filter .filter-wrap .search-block .date-pick input:focus{
+	border: none;
+	box-shadow: none;
+}
+.wrap > .filter .filter-wrap .search-block .date-pick .kv-date-calendar{
+	border-radius: 0 20px 20px 0;
+	background-color: #fff;
+	color: #4b4b4b;
+	border: none;
+}
+.wrap > .filter .filter-wrap .search-block .date-pick .kv-date-remove{
+	font-size: (13em / 16);
+	background-color: #fff;
+	color: #c4c4c4;
+	border: none;
+}
+.datepicker table tr td.active.active{
+	background-color: #2dc86f !important;
+	font-family: 'Open-Sans-Semibold';
+}
+.datepicker table tr td, .datepicker table tr th{
+	font-family: 'Open-Sans-Light';
+	font-size: (14em / 16)
+}
+.datepicker{
+	padding: 10px 40px;
+}
+.wrap > .filter .filter-wrap .search-block .search-input{
+	height: 40px;
+        
+}
+.wrap > .filter .filter-wrap .search-block .search-input input{
+	border: 0;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    width: 100%;
+	font-size: (25em / 16);
+    background-color: transparent;
+}
+.wrap > .filter .streams-holder{
+	text-align: center;
+	width: 100%;
+}
+.wrap > .filter .streams-holder > .match-stream{
+	display: inline-block;
+	width: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+.search-result
+{    
+    padding: 3px;
+}
+.search-el{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.search-el > .search-img{
+    float:left;
+    width:100%;
+    height:100%;
+    position: relative;
+    margin-right: 1em;
+    max-width: 33%;
+}
+.search-el > .search-info{    
+    height:100%;
+    padding:10px;
+}
+.search-el-date {
+        color : white;
+        font-family: monospace;
+        position: absolute;
+        margin-left: (22em / 16);
+        font-size: 1em;
+        margin-top: (12em / 16);
+}
+img.max-img{
+    height: 100%;
+    width: 100%;
+    min-height: 195px;
+}
+.selecter-holder{
+	width: 100%;
+	text-align: center;
+}
+@media screen and (min-width: (1200em / 16)) {
+	.wrap{
+	    margin-top: -7px;
+	}
+	.wrap > .wrap-img{
+		height: 250px;
+	}
+	.wrap > .filter .page-title{
+		font-size: (35em / 16);
+	}
+	.wrap > .filter .filter-wrap .search-block .date-pick{
+		width: 250px;
+		float: left;
+	}
+	.wrap > .filter .filter-wrap .search-block .search-input{
+		width: 100%;
+		float: left;
+	}
+	.wrap > .filter .filter-wrap .search-block{
+		width: 100%;
+		max-width: 800px;
+		margin-top: 45px;
+	}
+	.selecter-holder{
+		margin-top: 50px;
+	}
+	.wrap > .filter .streams-holder > .match-stream{
+		height: 500px;
+		border-radius: 3px;
+	}
+	.wrap{
+		margin-bottom: 15px;
+	}
+	.wrap > .filter .streams-holder{
+		margin-top: 50px;
+	}
+	.match-list > .title{
+		font-size: 34px;
+	}
+	.match-list{
+		padding-top: 50px;
+	}
+	.match-list > .type-selecter{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: (1199em / 16)) {
+	.wrap > .wrap-img{
+		height: 330px;
+	}
+	.wrap > .filter .page-title{
+		font-size: 28px;
+	}
+	.wrap > .filter .filter-wrap .search-block .date-pick{
+		width: 100%;
+	}
+	.wrap > .filter .filter-wrap .search-block .search-input{
+		width: 100%;
+		margin-top: 15px;
+	}
+	.wrap > .filter .filter-wrap .search-block{
+		width: 100%;
+		max-width: 500px;
+		margin-top: 30px;
+	}
+	.selecter-holder{
+		margin-top: 30px;
+	}
+	.wrap > .filter .streams-holder > .match-stream{
+		height: 350px;
+	}
+	.wrap{
+		margin-bottom: 1.5em;
+	}
+	.wrap > .filter .streams-holder{
+		margin-top: 30px;
+	}
+	.match-list > .title{
+		font-size: (28em / 16);
+	}
+	.match-list{
+		padding-top: (30em / 16);
+	}
+	.match-list > .type-selecter{
+		margin-top: (15em / 16);
+	}
+}

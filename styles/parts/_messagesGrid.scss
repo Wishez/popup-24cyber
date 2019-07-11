@@ -1,0 +1,43 @@
+.messagesGridRow {
+    @supports (display: grid) {
+        display: grid;
+        align-items: center;
+
+        @include breakpoint($xs-up) {
+            grid-template-columns: 132px 178px 150px 68px;
+        }
+
+        @include breakpoint($xs) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 13px;
+
+        }
+    }
+
+    padding: 11px 0 10px;
+    
+    @include breakpoint($xs) {
+      padding-right: 1.5em;
+    }
+
+    &:first-of-type {
+        border-top: 1px solid $gray;
+    }
+
+    border-bottom: 1px solid $gray;
+
+    > * {
+        margin: 0;
+    }
+
+    &__title {
+
+        @include breakpoint($xs-up) {
+            padding-left: 25px;
+        }
+
+        @include breakpoint($xs) {
+          text-align: center;
+        }
+    }
+}

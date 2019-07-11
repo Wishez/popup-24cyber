@@ -1,0 +1,106 @@
+.newUserPostBlock .col-sm-1, [id*="postAvatar"] {
+
+  > *:not(img):not(h3) {
+    @include breakpoint($xs) {
+      transform: translate(11em, -8em);
+    }
+  }
+}
+
+  [id*="postAvatar"] {
+    text-align: center;
+    background-color: $white;
+    margin-top: 1em;
+    position:relative;
+    order: -1;
+    padding: 0;
+    width: 68px;
+    height: 68px;
+
+    @include breakpoint($xs) {
+      margin: 2em auto ;
+      transform: translateX(-4em);
+    }
+
+
+    &:after {
+      content: "";
+      position: absolute;
+    }
+
+    &, img {
+      border-radius: 50%;
+    }
+
+    h3 {
+      @include breakpoint($xs) {
+        text-align: left;
+        transform: translate(8.5em, -7em);
+      }
+    }
+
+    img {
+      min-height: 100%;
+      height: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+
+.podium-avatar {
+  display: flex !important;
+}
+
+.userAvatar, .podium-post [id*="postAvatar"] {
+    z-index: 1;
+
+    &:after {
+        width: 130%;
+        height: 130%;
+        top: -15%;
+        left: -15%;
+        border-radius: 100%;
+        background-image: url("~/img/avatar-border.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    &_kinght {
+      &:after {
+
+      }
+    }
+
+}
+
+$ranks: ('knight', #3ac074), ('legend', #2c8ef2), ('lord', #19dbcb), ('god', #f7132b), ('father', #fda82a);
+
+@each $rank, $titleColor in $ranks {
+  .userAvatar_#{$rank}, .podium-post_#{$rank} [id*="postAvatar"] {
+    &:after {
+      background-image: url("../img/#{$rank}.png");
+    }
+
+    h3 {
+      color: #{$titleColor};
+    }
+  }
+}
+
+.userAvatar {
+
+  &__title {
+    margin-top: 1.15em;
+  }
+
+  &_big {
+    width: 85px;
+    height: 85px;
+  }
+
+  &_small {
+    width: 68px;
+    height: 68px;
+  }
+}

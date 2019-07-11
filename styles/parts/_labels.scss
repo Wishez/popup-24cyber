@@ -1,0 +1,15 @@
+.circleLabel {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 26px;
+  min-height: 26px;
+  tranisition-duration: 300ms;
+  font-weight: 700;
+
+  &_darkBlue {
+    background-color: $darkBlue;
+    color: $white;
+  }
+}

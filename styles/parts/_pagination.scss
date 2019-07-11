@@ -1,0 +1,26 @@
+.messagesPagination {
+    padding: 2px 3px;
+    background-color: #e8e8e8;
+
+    &__page {
+        border-radius: 50%;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 26px;
+        min-height: 26px;
+        transition-duration: 300ms;
+
+        &_active {
+            background-color: $darkBlue;
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $white;
+                background-color: lighten($darkBlue, 7.5%);
+            }
+        }
+    }
+}

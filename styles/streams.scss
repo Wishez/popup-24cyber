@@ -1,0 +1,1131 @@
+$i: !important;
+
+.c-te {
+	border-radius: 6px;
+}
+.stream-matches > .block-open{
+	background-color: #232323;
+	opacity: 0.5;
+	z-index: 3;
+	cursor: pointer;
+	overflow: hidden;
+	border-right: 1px solid #1f1f1f;
+	border-radius: 6px;
+}
+.block-header{
+	position: relative;
+}
+.stream-matches{
+	position: relative;
+	background-color: transparent;
+	overflow: hidden;
+}
+.stream-matches .stream-frame{
+	position: relative;
+	width: 100%;
+	background-color: #000;
+	border: none;
+	overflow: hidden;
+}
+.chat-frame {
+	width: 100%;
+	height: 100%;
+}
+.stream-matches .stream-frame .stream{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	border: none;
+	overflow: hidden;
+}
+.stream-matches > .left, .stream-matches > .right{
+	z-index: 4;
+}
+.helper-close > .fa{
+	font-size: 16px;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    cursor: pointer;
+}
+.isSafari .stream-matches .matches {
+	position: relative;
+	left: -5px;
+}
+.matches{
+	height: 100%;
+	background-color: #eeeeee;
+	background: linear-gradient(to bottom, #eeeeee, #fff);
+	border: 1px solid #e4e4e4;
+	border-right: none;
+	border-top: none;
+}
+.matches > .matches-game-selecter{
+	position: relative;
+	width: 100%;
+	height: 42px;
+}
+.matches > .matches-game-selecter > .selecter{
+	float: left;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	font-family: 'Open-Sans-Semibold';
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	text-transform: uppercase;
+	background-size: contain;
+	opacity: 0.9;
+	transition: 0.3s opacity;
+	-webkit-transition: 0.3s opacity;
+	user-select: none;
+}
+.matches > .matches-game-selecter > .selecter:hover{
+	opacity: 1;
+}
+.matches > .matches-game-selecter > .dota{
+	border-radius: 0 0 10px 0;
+	background-image: url('/img/dota-button.png');
+}
+.matches > .matches-game-selecter > .csgo{
+	border-radius: 0 0 0 10px;
+	background-image: url('/img/csgo-button.png');
+}
+.matches > .matches-game-selecter > .selected{
+	background: initial;
+	color: #333b4e;
+	opacity: 1;
+}
+.matches > .match-type-selecter{
+	height: 32px;
+	width: 100%;
+}
+.matches > .match-type-selecter > .selecter{
+	width: 50%;
+	text-align: center;
+	line-height: 32px;
+	float: left;
+	font-family: 'Open-Sans', arial;
+	font-size: 13px;
+	color: #666666;
+	user-select: none;
+	cursor: pointer;
+	-webkit-transition: 0.3s background-color;
+	transition: 0.3s background-color;
+}
+.matches > .matches-list{
+	width: 100%;
+	overflow: hidden;
+}
+.matches > .matches-list > .match{
+	display: block;
+	height: 44px;
+	width: 100%;
+	cursor: pointer;
+	-webkit-transition: 0.3s background-color;
+	transition: 0.3s background-color;
+	border-top: 1px solid #e4e4e4;
+}
+.matches > .matches-list > .match:hover{
+	background-color: #eeefee;
+}
+.matches > .matches-list > .selected{
+	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	background-color: #202736;
+	background: linear-gradient(to top, #202736, #414b61);
+	&:hover {
+		color: #202736;
+		background-color: #202736 $i;
+		background: linear-gradient(to top, #202736, #414b61) $i;
+	}
+}
+.matches > .matches-list > .match .logo{
+	background-image: url('https://24cyber.ru/img/logos/Virtus_Pro.png');
+	width: 22px;
+	height: 22px;
+	background-color: #eeeeee;
+	border-radius: 3px;
+	border: 1px solid #eeeeee;
+	background-size: contain;
+	margin-top: 11px;
+}
+.matches > .matches-list > .match .flag{
+	width: 18px;
+	height: 13px;
+	background-image: url(https://24cyber.ru/img/flags/ru.png);
+	background-size: cover;
+	margin-top: 16px;
+	box-shadow: 0 0 1px #464d5e;
+}
+.matches > .matches-list > .match .name{
+	font-family: 'Open-Sans', arial;
+	font-size: 13px;
+	color: #333333;
+	line-height: 44px;
+    width: 50%;
+    width: calc(100% - 75px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.matches > .matches-list > .selected .name{
+	color: #fff;
+}
+.matches > .matches-list > .match > .team-left > .name{
+	float: right;
+	margin-right: 9px;
+	text-align: right;
+}
+.matches > .matches-list > .match > .team-right > .name{
+	float: left;
+	margin-left: 9px;
+}
+.matches > .matches-list > .match > .vs > .live{
+    height: 7px;
+    width: 7px;
+    background-color: #2dc86f;
+    box-shadow: 0 0 6px 0 #2dc86f;
+    border-radius: 7px;
+    display: inline-block;
+}
+.matches > .matches-list > .other-matches{
+	padding: 9px 0;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: 0.3s background-color;
+	transition: 0.3s background-color;
+}
+.matches > .matches-list > .other-matches:hover{
+	background-color: #eeefee;
+}
+.matches > .matches-list > .other-matches > .text{
+	display: block;
+	line-height: 1;
+	font-family: 'Open-Sans', arial;
+	font-size: 14px;
+	color: rgba(51, 51, 51, 0.50);
+}
+.matches > .matches-list > .other-matches > .text > .icon-points{
+	position: relative;
+	margin-right: 10px;
+	top: -1px;
+}
+.matches > .matches-list > .match > .team-left > .logo{
+	float: right;
+	margin-right: 0;
+}
+.matches > .matches-list > .match > .team-right > .logo{
+	float: left;
+	margin-left: 0;
+}
+.matches > .matches-list > .match > .team-left > .flag{
+	float: right;
+	margin-right: 9px;
+}
+.matches > .matches-list > .match > .team-right > .flag{
+	float: left;
+	margin-left: 9px;
+}
+.matches > .matches-list > .match > .vs{
+    width: 31px;
+    height: 100%;
+    float: left;
+    color: #333333;
+    font-size: 11px;
+    font-family: 'Open-Sans', arial;
+    text-align: center;
+}
+.matches > .matches-list > .match > .team-right > .match-link{
+	line-height: 44px;
+	color: #242d2d;
+}
+.matches > .matches-list > .selected .vs{
+	color: #fff;
+}
+.matches > .matches-list > .selected > .team-right > .match-link{
+	color: #d8ffff;
+}
+
+
+.matches > .matches-list > .match > .team-left{
+	float: left;
+	height: 100%;
+	width: 	45%;
+	width: calc(50% - 31px / 2);
+}
+.matches > .matches-list > .match > .team-right{
+	float: left;
+	height: 100%;
+	width: 	45%;
+	width: calc(50% - 31px / 2);
+}
+.matches > .match-type-selecter > .selecter:hover{
+	background-color: #e8e8e8;
+}
+.matches > .match-type-selecter > .selected{
+	color: #414b61;
+	font-weight: bold;
+}
+.stream-matches > .right > .help-box{
+	height: 100%;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.7);
+	overflow-y: auto;
+}
+.stream-matches > .right > .help-box > .nav{
+	height: 60px;
+	width: 100%;
+}
+.stream-matches > .right > .help-box > .nav > .option,
+.stream-matches > .right > .help-box > .nav > .option-game
+{
+	width: 78px;
+	height: 100%;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	transition: 0.3s background-color;
+}
+.stream-matches > .right > .help-box > .nav > .selected{
+	background-image: url('/img/icons/texture.png');
+}
+.stream-matches > .right > .help-box > .nav > .option:not(.selected):hover,
+.stream-matches > .right > .help-box > .nav > .option-game:not(.selected):hover
+{
+	background-color: #3c3939;
+}
+.stream-matches > .right > .help-box > .nav > .left{
+	float: left;
+}
+.stream-matches > .right > .help-box > .nav > .right{
+	float: right;
+}
+.stream-matches > .right > .help-box > .nav > .option > .fa,
+.stream-matches > .right > .help-box > .nav > .option-game > .fa
+{
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.75);
+	line-height: 60px;
+}
+.stream-matches > .right > .help-box > .content{
+	height: 98%;
+	height: calc(100% - 60px);
+	background-image: url('/img/icons/texture.png');
+	display: none;
+}
+.stream-matches > .right > .help-box > .streams{
+	display: block;
+}
+.stream-matches > .right > .help-box > .chat > {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+}
+.stream-matches > .right > .help-box > .streams > .flag-selecter{
+	width: 100%;
+	line-height: 43px;
+}
+.stream-matches > .right > .help-box > .streams > .flag-selecter > .flag-chose{
+	font-family: 'Open-Sans', arial;
+	font-size: 14px;
+	color: #d8d8d9;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+.stream-matches > .right > .help-box > .streams > .flag-selecter > .flag{
+	position: relative;
+	width: 20px;
+	display: inline-block;
+	height: 15px;
+    background-image: url(https://24cyber.ru/img/flags/ru.png);
+    background-size: cover;
+    box-shadow: 0 0 1px #464d5e;
+    margin-left: 15px;
+    margin-top: 14px;
+    cursor: pointer;
+    top: 2px;
+    opacity: 0.35;
+    background-position: center;
+}
+.stream-matches > .right > .help-box > .streams > .flag-selecter > .selected{
+	opacity: 1;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list{
+ 	width: 100%;
+ 	overflow: auto;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list > .stream{
+	height: 40px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	opacity: 0.6;
+	cursor: pointer;
+	transition: 0.3s opacity;
+	position: relative;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list > .stream:not(.selected):hover{
+	opacity: 0.8;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list > .selected{
+	opacity: 1;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list > .stream > .img{
+	height: 40px;
+	width: 40px;
+	background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/fc4c94d45b40e421-profile_image-300x300.jpeg');
+	background-size: contain;
+	float: left;
+}
+
+.stream-matches > .right > .help-box > .streams > .stream-list > .stream > .name{
+	font-family: 'Open-Sans', arial;
+	font-size: 12px;
+	color: #fff;
+	margin-left: 10px;
+	float: left;
+	line-height: 40px;
+}
+.stream-matches > .right > .help-box > .streams > .stream-list > .stream > .green_act{
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: green;
+	left: 3px;
+	top:3px;
+}
+.stream-matches > .right > .help-box > .data{
+	overflow-y: auto;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter{
+	height: 55px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-left: 50px;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options,
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game
+{
+	position: relative;
+	display: inline-block;
+	height: 35px;
+	top: 10px;
+	background-color: rgba(17, 17, 17, 1);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s background-color;
+	text-align: left;
+	z-index: 10;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options
+{
+	width: 200px;
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game
+{
+	width: 100px;
+	float: left;
+    margin-left: 3px;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options:not(.open):hover,
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game:not(.open):hover
+{
+	background-color: rgba(17, 17, 17, 0.55);
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options > .down,
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .down-game
+{
+	position: absolute;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	right: 18px;
+	line-height: 35px;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .fa-caret-down:before{
+	color:#fff;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .down{
+	position: absolute;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	right: 18px;
+	line-height: 35px;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options > .option,
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .option-game
+{
+	display: none;
+	font-family: 'Open-Sans-Semibold';
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.75);
+	padding-left: 21px;
+	line-height: 35px;
+	user-select: none;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .options > .selected,
+.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .selected
+{
+	display: block;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .open{
+	height: auto;
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option,
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option-game
+{
+	display: block;
+	transition: 0.3s background-color;
+	border-bottom: 1px solid rgb(39, 39, 39);
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option:hover,
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option-game:hover
+{
+	background-color: rgba(17, 17, 17, 0.45);
+}
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option:last-child,
+.stream-matches > .right > .help-box > .data > .content-selecter > .open > .option-game:last-child
+{
+	border-bottom: none;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .team-block{
+	width: 100%;
+	display: inline-block;
+	margin-top: 1em;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .team-block > .team{
+	font-family: 'Open-Sans-Semibold';
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.75);
+	margin-left: 10px;
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .team-block > .line{
+	height: 1px;
+	width: 21px;
+	background-color: rgba(255, 255, 255, 0.15);
+	float: left;
+	margin-top: 8.5px;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks{
+	margin-left: 30px;
+	width: 	98%;
+	width: calc(100% - 30px);
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick{
+	margin-top: 3px;
+	width: 100%;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick:first-child{
+	margin-top: 0;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .hero{
+	height: 28px;
+	width: 50px;
+	background-size: cover;
+	background-image: url('https://24cyber.ru/img/heroes/81.png');
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 	98%;
+	width: calc(100% - 50px);
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .radiant > .stat{
+	background-color: rgba(9, 121, 56, 0.85);
+	background: linear-gradient(to right, rgba(9, 121, 56, 0.85), rgba(0, 0, 0, 0));
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .dire > .stat{
+	background-color: rgba(121, 9, 30, 0.85);
+	background: linear-gradient(to right, rgba(121, 9, 30, 0.85), rgba(0, 0, 0, 0));
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat > .desc{
+	font-family: 'Open-Sans-Semibold';
+	color: #fff;
+	padding-left: 5px;
+	line-height: 1;
+	width: 120px;
+	float: left;
+	overflow: hidden;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat > .desc > .player{
+	font-size: 12px;
+	margin-top: 3px;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat > .desc > .hero-name{
+	font-size: 10px;
+	opacity: 0.5;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat > .items{
+	float: left;
+	height: 100%;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .picks > .pick > .stat > .items > .item{
+	width: 25px;
+	height: 20px;
+	background-color: #292e3a;
+	margin-top: 4px;
+	float: left;
+	border: 1px solid #4a546d;
+	background-size: cover;
+	background-image: url('https://24cyber.ru/img/items/220.png');
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .bans{
+	width: 100%;
+	padding-left: 30px;
+
+	> * {
+		  margin-bottom: 1em;
+	}
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .bans > .text{
+	float: left;
+	margin-left: 17px;
+	font-family: 'Open-Sans';
+	font-size: 10px;
+	color: #fff;
+	opacity: 0.5;
+	margin-top: 5px;
+	line-height: 1;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .bans > .heroes{
+	float: left;
+	margin-top: 3px;
+	margin-left: 8px;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .bans > .heroes > .hero{
+	height: 13px;
+	width: 16px;
+	background-image: url('https://24cyber.ru/img/heroes/81.png');
+	background-size: cover;
+	margin-left: 2px;
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .pick-bans > .bans > .heroes > .hero:first-child{
+	margin-left:0;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .team-block{
+	width: 100%;
+	display: inline-block;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .team-block > .team{
+	font-family: 'Open-Sans-Semibold';
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.75);
+	margin-left: 10px;
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .team-block > .line{
+	height: 1px;
+	width: 21px;
+	background-color: rgba(255, 255, 255, 0.15);
+	float: left;
+	margin-top: 8.5px;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks{
+	margin-left: 30px;
+	width: 	98%;
+	width: calc(100% - 30px);
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick{
+	height: 28px;
+	margin-top: 3px;
+	width: 100%;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick:first-child{
+	margin-top: 0;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .hero{
+	height: 28px;
+	width: 50px;
+	background-size: cover;
+	background-image: url('https://24cyber.ru/img/heroes/81.png');
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 	98%;
+	width: calc(100% - 50px);
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .radiant > .stat{
+	background-color: rgba(9, 121, 56, 0.85);
+	background: linear-gradient(to right, rgba(9, 121, 56, 0.85), rgba(0, 0, 0, 0));
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .dire > .stat{
+	background-color: rgba(121, 9, 30, 0.85);
+	background: linear-gradient(to right, rgba(121, 9, 30, 0.85), rgba(0, 0, 0, 0));
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat > .desc{
+	font-family: 'Open-Sans-Semibold';
+	color: #fff;
+	padding-left: 5px;
+	line-height: 1;
+	width: 120px;
+	float: left;
+	overflow: hidden;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat > .desc > .player{
+	font-size: 12px;
+	margin-top: 3px;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat > .desc > .hero-name{
+	font-size: 10px;
+	opacity: 0.5;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat > .items{
+	float: left;
+	height: 100%;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .picks > .pick > .stat > .items > .item{
+    width: 25px;
+    height: 20px;
+    background-color: #292e3a;
+    margin-top: 4px;
+    float: left;
+    border: 1px solid #4a546d;
+    background-size: cover;
+    background-image: url('https://24cyber.ru/img/items/220.png');
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .bans{
+	width: 100%;
+	padding-left: 30px;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .bans > .text{
+	float: left;
+	margin-left: 17px;
+	font-family: 'Open-Sans';
+	font-size: 10px;
+	color: #fff;
+	opacity: 0.5;
+	margin-top: 5px;
+	line-height: 1;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .bans > .heroes{
+	float: left;
+	margin-top: 3px;
+	margin-left: 8px;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .bans > .heroes > .hero{
+	height: 13px;
+	width: 16px;
+	background-image: url('https://24cyber.ru/img/heroes/81.png');
+	background-size: cover;
+	margin-left: 2px;
+	float: left;
+}
+.stream-matches > .right > .help-box > .data > .stat-tab > .bans > .heroes > .hero:first-child{
+	margin-left:0;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list{
+	font-family: 'Open-Sans', arial;
+	font-size: 13px;
+	color: #fff;
+	width: 100%;
+	table-layout: fixed;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list .head > .team{
+	text-align: center;
+	font-weight: normal;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list .head > .name{
+	font-weight: bold;
+	text-align: center;
+	width: 130px;
+}
+.stream-matches > .right > .help-box > .data > #game-stats > .bk-list .head > .name{
+	font-weight: bold;
+	text-align: center;
+	width: 40px;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list .odd > .koff{
+	font-weight: bold;
+	text-align: center;
+	padding: 7px 0;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list .odd > .bk{
+	text-align: center;
+	width: 50px;
+}
+.stream-matches > .right > .help-box > .data > .bookmakers > .bk-list .odd > .bk > a> .img{
+	height: 20px;
+	display: inline-block;
+}
+#stream-matches > div.stream-frame > div > div.waiting_g.over
+{
+	margin-top: 60px$i;
+}
+.list_stat{
+	width: 360px;
+	padding: 0;
+	margin:0;
+	outline: 0;
+	border:0;
+	border-spacing:0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table td {
+	padding: 0;
+	margin: 0;
+}
+td, th {
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+.top_dark{
+	background-color: #32383B;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	text-align: center;
+	line-height: 40px;
+}
+.simple_line_light{
+	color: #fff;
+	background-color: #474D50;
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+}
+.simple_line_dark{
+	text-align: center;
+	color: #fff;
+	background-color: #414649;
+	font-size: 12px;
+	line-height: 25px;
+}
+.bg_gr1{
+	background-image: url(../../img/stream/csgo/1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	width: 20px;
+}
+.bg_red2{
+	background-image: url(../../img/stream/csgo/2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	width: 20px;
+}
+.bg_gr3{
+	background-image: url(../../img/stream/csgo/3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	width: 20px;
+}
+.bg_red4{
+	background-image: url(../../img/stream/csgo/4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	width: 20px;
+}
+.sim_back_img th{
+	height: 20px;
+
+}
+.sim_back_img{
+	background-color: #32373C;
+}
+.list_stat_sec{
+	width: 360px;
+	padding: 0;
+	margin:0;
+	outline: 0;
+	border:0;
+	border-spacing:0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+tr.top_dark > th
+{
+	text-align: center;
+}
+.numb_team{
+	width:120px;
+}
+.list_stat_sec th img{
+	width: 14px;
+	height: auto;
+}
+
+.game-sel {
+	padding: 0.2em 2em;
+}
+.game-chose, .flag-chose {
+	color: #a1a1a1;
+}
+.flag-selecter .flag, .game-opt {
+	background-color: transparent;
+	border: 0;
+}
+.game-opt {
+	color: #f7f7f7;
+}
+.game-opt:not(.selected) {
+	/*border-bottom: 1px dashed #f7f7f7 $i;*/
+	text-decoration: line-through;
+}
+
+.game-opt.selected, .flag-selecter .flag.selected {
+	font-weight: bold;
+	border: 1px solid #a3b8e9;
+}
+
+@media (min-width: (1200em / 16)) {
+		.stream-matches{
+		margin-top: 8px;
+		border-radius: 5px;
+		height: 503px;
+	}
+	.stream-matches > .left{
+		position: absolute;
+		height: 100%;
+		width: 33%;
+		width: calc(4 / 12 * 100% - 5px);
+		left: -100%;
+	}
+	.stream-matches .stream-frame{
+		height: 100%;
+		padding-left: 30px;
+		border-radius: 7px;
+	}
+	.matches > .matches-list{
+		width: 100%;
+	}
+	.matches{
+		float: left;
+		width: 99%;
+		width: calc(100% - 15px);
+		border-radius: 5px 0 0 5px;
+	}
+	.stream-matches > .left > .left-close{
+		width: 15px;
+		height: 100%;
+		float: left;
+	}
+	.stream-matches > .left > .left-close > .fa{
+		border-radius: 0 5px 5px 0;
+	}
+	.helper-close > .fa{
+		margin-top: 239.5px;
+		width: 15px;
+		height: 24px;
+	    line-height: 24px;
+	}
+	.stream-matches .stream-frame{
+		height: 100%;
+	}
+	.stream-matches > .right{
+		position: absolute;
+		right: -100%;
+		height: 100%;
+		width: 	33%;
+		width: calc(4 / 12 * 100% - 5px);
+		top: 0;
+	}
+	.stream-matches > .right > .right-close{
+		height: 100%;
+		width: 15px;
+		float: left;
+	}
+	.stream-matches > .right > .right-close > .fa{
+		border-radius: 5px 0 0 5px;
+	}
+	.stream-matches > .right > .help-box{
+		width: 99%;
+		width: calc(100% - 15px);
+	}
+	.stream-matches > .left-open{
+		width: 18px;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.stream-matches > .left-open > .fa{
+		position: absolute;
+		right:0;
+		font-size: 15px;
+		color: #000;
+		background-color: #fff;
+		height: 25px;
+		width: 15px;
+		line-height: 25px;
+		text-align: center;
+		border-radius: 5px 0 0 5px;
+		top: 239px;
+	}
+	.stream-matches > .right-open{
+		width: 18px;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.stream-matches > .right-open > .fa{
+		position: absolute;
+		left: 0;
+		font-size: 15px;
+		color: #000;
+		background-color: #fff;
+		height: 25px;
+		width: 15px;
+		line-height: 25px;
+		text-align: center;
+		border-radius: 0 5px 5px 0;
+		top: 239px;
+	}
+}
+@media (max-width: (1199em / 16)){
+	.stream-matches{
+		border-radius: 0;
+	}
+	.stream-container{
+		padding: 0;
+	}
+	.stream-matches > .left{
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		margin-top: -99%;
+		margin-top: calc(-100% + 15px);
+	}
+	.stream-matches .stream-frame{
+		height: 360px;
+	}
+	.matches > .matches-list{
+		height: 164px;
+		width: 100%;
+	}
+	.matches > .matches-list > .match:nth-child(n + 4):nth-child(-n + 9){
+		display: none;
+	}
+	.matches{
+		width: 100%;
+	}
+	.stream-matches > .left > .left-close{
+	    height: 15px;
+	    width: 100%;
+	    position: relative;
+	    text-align: center;
+	}
+	.stream-matches > .left > .left-close > .fa{
+		border-radius: 0 0 5px 5px;
+	}
+	.helper-close > .fa{
+		display: inline-block;
+		height: 15px;
+		width: 24px;
+	    line-height: 15px;
+	    position: relative;
+	    top: -2px;
+	}
+	.stream-matches .stream-frame{
+		height: 360px;
+		margin-top: -19px;
+	}
+	.stream-matches > .right{
+		position: relative;
+		width: 100%;
+		height: 505px;
+		margin-top: -15px;
+		overflow: hidden;
+		height: 0;
+	}
+	.stream-matches > .right > .right-close{
+		position: relative;
+		width: 100%;
+		height: 15px;
+		text-align: center;
+	}
+	.stream-matches > .right > .right-close > .fa{
+		border-radius: 5px 5px  0 0;
+	}
+	.stream-matches > .right > .help-box{
+		width: 100%;
+	}
+	.stream-matches > .left-open{
+		height: 30px;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 19px;
+	}
+	.stream-matches > .left-open > .fa{
+		position: relative;
+		display: inline-block;
+		top: 15px;
+		font-size: 16px;
+		color: #000;
+		background-color: #fff;
+		width: 24px;
+		height: 15px;
+		line-height: 15px;
+		text-align: center;
+		border-radius: 5px 5px 0 0;
+	}
+	.stream-matches > .right-open{
+		height: 30px;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		font-size: 0;
+	}
+	.stream-matches > .right-open > .fa{
+		position: relative;
+		display: inline-block;
+		font-size: 16px;
+		color: #000;
+		background-color: #fff;
+		width: 24px;
+		height: 15px;
+		line-height: 15px;
+		text-align: center;
+		border-radius: 0 0 5px 5px;
+	}
+}
+@media (max-width: (400em / 16)){
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options{
+		width: 40%;
+	}
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options, .stream-matches > .right > .help-box > .data > .content-selecter > .options-game{
+		overflow: hidden;
+	}
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options > .option, .stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .option-game{
+		overflow: hidden;
+		width: 85%;
+	}
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options-game{
+		width: 40%;
+	}
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options > .down, .stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .down-game{
+		right: 8px;
+	}
+	.stream-matches > .right > .help-box > .data > .content-selecter > .options-game > .down{
+		right: 8px;
+	}
+}

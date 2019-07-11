@@ -1,0 +1,131 @@
+$i: !important;
+
+.userData {
+  flex-grow: 1;
+  margin-top: .7em;
+  padding-left: 0.1em;
+
+  @include breakpoint($xxs-up) {
+    padding-right: 1.25em;
+  }
+}
+
+.settings {
+  padding: 3em 2em 45px;
+
+  &__submitButton {
+
+    @include breakpoint($xs-up) {
+      margin-top: 2.75em;  
+    }
+
+    @include breakpoint($xs) {
+      margin-top: .85em;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: .8em;
+
+    @include breakpoint($xxs) {
+      flex-wrap: wrap;
+    }
+
+    &:nth-of-type(2) {
+        margin-bottom: 1.25em;
+    }
+  }
+
+  label {
+      color: $darkBlue;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0;
+  }
+
+  input {
+      border: none;
+      border-bottom: $gray solid 1px;
+      font-size: 1em;
+      box-shadow: none $i;
+      border-radius: 0 $i;
+
+      @include breakpoint($xxs) {
+        min-width: 100%;
+      }
+  }
+
+  input, .input-group {
+    max-width: 177px;
+    margin-left: auto;
+    font-size: 14px;
+
+    @include breakpoint($xxs) {
+      min-width: 100%;
+    }
+  }
+
+  input, .input-group, .input-group-addon {
+    @include breakpoint($xxs-up) {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+#f1 {
+  display: flex;
+  flex-flow: row wrap;
+
+  .upload-image {
+    max-width: 100%;
+    display: block;
+    height: 100%;
+  }
+
+  .img-upl {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+.settingsController_avatar {
+    min-width: 120px;
+}
+
+.settingsControllerDropdownContainer {
+
+  @include breakpoint($xs-up) {
+    max-width: 308px;
+    transform: translateY(-6px);
+  }
+}
+
+.settingsAvatar {
+  &__submitButton {
+    transform: translateY(4px);
+  }
+}
+
+.settingsController {
+  &_timezone {
+    margin-top: 2.15em;
+  }
+
+  &__hint {
+    padding-left: 31%;
+    margin-top: .35em;
+  }
+
+  &__button {
+    height: 29px;
+    transition-duration: 300ms;
+
+    @include breakpoint($xs-up) {
+      margin-right: 1em;
+    }
+  }
+}

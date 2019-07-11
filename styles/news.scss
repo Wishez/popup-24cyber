@@ -1,0 +1,352 @@
+$i: !important;
+
+.wrap{
+    position: relative;
+    padding-left: 0 $i;
+    padding-right: 0 $i;
+    background-color: #384155;
+    margin-top: -7px;
+}
+.wrap > .wrap-img{
+    width: 100%;
+    background-image: url('/img/news_img.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+}
+.wrap > .filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.04));
+}
+.wrap > .filter .page-title{
+    font-family: 'Open-Sans';
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.wrap > .filter .page-sub-title{
+    margin-top: 25px;
+    font-size: 1em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.wrap > .filter .search-container{
+    width: 100%;
+    text-align: center;
+}
+.wrap > .filter .search-container > .search-block{
+    width: 100%;
+    max-width: 530px;
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.wrap > .filter .search-container > .search-block > .input-block{
+    width: 100%;
+    position: relative;
+}
+.wrap > .filter .search-container > .search-block > .input-block > .search-input{
+    width: 100%;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    color: #888888;
+    font-size: 14px;
+    font-family: 'Open-Sans';
+    padding-left: 45px;
+}
+.wrap > .filter .search-container > .search-block > .input-block > .search-icon{
+    position: absolute;
+    color: #313a4c;
+    margin-left: 20px;
+    line-height: 38px;
+    cursor: pointer;
+    left:0;
+    top: 0;
+}
+.wrap > .filter .search-container > .search-block > .input-block > .remove-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    line-height: 38px;
+    color: #acaeb4;
+    top: 0;
+    cursor: pointer;
+}
+.wrap > .filter .selecter-container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -22px;
+}
+.wrap > .filter .selecter-container > .game-selecter{
+    height: 34px;
+    border-radius: 20px;
+}
+.wrap > .filter .selecter-container .option{
+    font-size: 16px;
+    padding: 0 25px;
+    line-height: 34px;
+}
+.wrap > .filter .selecter-container .selected{
+    border-radius: 20px;
+}
+.main-container-list{
+    height: 100%;
+    position: relative;
+}
+.news-container{
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+.news-container > .first-news{
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+}
+.news-container > .first-news > .news{
+    height: 530px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    float: left;
+}
+.news-container > .first-news > .news > .image{
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://24cyber.ru/uploads/images/1-iNCMcjK1jyXdjQu2B_ip6A.jpeg);
+}
+.news-container > .first-news > .news > .desc{
+    width: 100%;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+    height: 95%;
+    height: calc(100% - 240px);
+    padding-top: 20px;
+}
+.news-container > .first-news > .news > .desc > .title{
+    position: relative;
+    font-family: 'Open-Sans';
+    font-weight: bold;
+    color: #333333;
+    font-size: 22px;
+}
+.news-container > .first-news > .news > .desc > .text{
+    color: #000;
+    font-family: 'Open-Sans-Light';
+    font-size: 16px;
+    margin-top: 15px;
+    height: 112px;
+    overflow: hidden;
+}
+.news-container > .first-news > .news > .desc > .stats{
+    position: absolute;
+    height: 25px;
+    bottom: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-right: 20px;
+}
+.news-container > .first-news > .news > .desc > .stats > *:not(.stat){
+    float: left;
+}
+.news-container > .first-news > .news > .desc > .stats > .game{
+    width: 24px;
+    height: 25px;
+}
+.news-container > .first-news > .news > .desc > .stats > .date{
+    font-size: 13px;
+    color: #bfbfbf;
+    font-family: 'Open-Sans';
+    margin-left: 15px;
+    line-height: 25px;
+}
+.news-container > .first-news > .news > .desc > .stats > .stat{
+    float: right;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #999999;
+    font-family: 'Open-Sans';
+    font-weight: bold;
+}
+.news-title{
+    color: #333b4e;
+    font-family: 'Open-Sans';
+    padding: 0;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.news-list{
+    margin-top: 45px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.news-list > .news{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ddd;
+    text-align: left;
+    margin-top: 10px;
+}
+.page-title {
+    padding: 10px;
+    color: #ecf0f1;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 1px #333;
+}
+.news-list > .news > .image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://24cyber.ru/uploads/images/1-iNCMcjK1jyXdjQu2B_ip6A.jpeg);
+}
+.news-list > .news > .image-filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+.news-list > .news > .image-filter > .date{
+    margin-top: (25em / 13);
+    font-size: (13em / 16);
+    color: #fff;
+    line-height: 1;
+}
+.news-list > .news > .image-filter > .title{
+    font-size: (22em / 16);
+    color: #fff;
+    font-weight: bold;
+    margin-top: (30em / 22);
+    line-height: 1;
+}
+.news-list > .news > .image-filter > .text {
+    font-size: (15em / 16);
+    color: #fff;
+    margin-top: 1em;
+    overflow: hidden;
+    height: 7em;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    padding-right: 1em;
+}
+.news-list > .news > .image-filter > .stats{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding-right: 45px;
+}
+.news-list > .news > .image-filter > .stats > .game{
+    float: left;
+    height: 25px;
+    width: 24px;
+}
+.news-list > .news > .image-filter > .stats > .stat{
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    font-size: (12em / 16);
+    line-height: (25em / 12);
+    margin-right: (15em / 12);
+}
+.news-list > .news > .image-filter > .stats > .stat > .fa{
+    color: #434243;
+} 
+.more{
+    color: #999999;
+    font-family: 'Open-Sans-Semibold';
+    font-size: 1em;
+    text-align: center;
+    padding: 7px 0;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    transition: 0.3s background-color;
+    margin-left: 41%;
+    margin-left: calc(50% - 114px);
+    margin-bottom: 30px;
+    border-radius: 20px;
+    width: (228em / 16)
+}
+@media screen and (min-width: (1200em / 16)) {
+    .wrap > .filter .page-title{
+        font-size: (35em / 16);
+        margin-top: (40em / 35);
+        line-height: 1;
+    }
+    .wrap > .wrap-img{
+        height: 450px;
+    }
+    .news-container > .first-news > .news{
+        width: 30%;
+        width: calc((100% - 60px) / 3);
+        margin-left: 20px;
+    }
+    .news-container > .first-news > .news:first-child{
+        margin-left: 0;
+    }
+    .news-title{
+        font-size: (30em / 16)
+    }
+    .news-list > .news{
+        width: 45%;
+        width: calc((100% - 30px) / 2);
+        margin-left: 30px;
+    }
+    .news-list > .news:nth-child(odd){
+        margin-left: 0;
+    }
+    .wrap > .filter .page-sub-title{
+        line-height: 1;
+    }
+}
+@media screen and (max-width: (1199em / 16)){
+    .wrap > .filter .page-title{
+        font-size: (28em / 16);
+        margin-top: (25em / 28);
+    }
+    .wrap > .wrap-img{
+        height: 445px;
+    }
+    .news-container > .first-news > .news{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .news-title{
+        font-size: (25em / 16);
+    }
+    .news-list > .news{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+#news-loader-p{
+    margin-bottom: 20px;
+    display: none;
+}

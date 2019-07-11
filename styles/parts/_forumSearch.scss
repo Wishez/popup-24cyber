@@ -1,0 +1,119 @@
+.radioList {
+  &_offset {
+     padding-left: 3.3em;
+  }
+}
+
+.searchBigSubmitButton {
+  min-width: 217px;
+  min-height: 51px;
+  margin-top: em(77, 18);
+}
+
+#search-form {
+  max-width: 730px;
+
+  .form-group:not(:first-of-type) {
+    margin-top: 2.35714285714285714286em;
+  }
+
+  .form-group {
+    padding-bottom: 0;
+  }
+
+  label {
+    padding-left: 2em;
+    padding-bottom: .7em;
+  }
+
+  .forumSearchController__button {
+    top: auto;
+    bottom: 0;
+    max-height: 42px;
+    min-width: 71px;
+    font-size: 19px;
+  }
+
+
+  .radio-inline {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 0 $i;
+    padding-left: 0;
+    font-size: 14px
+  }
+
+  input[type="radio"]  {
+    transform: scale(1.4);
+    margin: 0 18px 0 0;
+    padding: 0;
+    position: static;
+  }
+
+  [class*="form-group field-searchform-date"] {
+    margin-top: .58em;
+    margin-bottom: 0;
+  }
+
+  select {
+    border-radius: 15px;
+    min-height: 191px;
+    padding: 2.3em 2.3em 2.75em;
+  }
+
+  .field-searchform-display {
+    margin-top: 1em;
+  }
+
+  optgroup {
+
+    &:not(:first-child) {
+      margin-top: 1.2em;
+    }
+
+    option {
+      padding-left: 1.2em;
+
+      &:first-child {
+        margin-top: .8em;
+      }
+    }
+  }
+
+  input:not([type="radio"]), select {
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.15);
+    border: 0;
+  }
+
+  input:not([type="radio"]) {
+
+    border-radius: 25px;
+    min-height: 39px;
+
+  }
+
+  .input-group-addon.kv-date-calendar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: transparent;
+    border: 0;
+    z-index: 1;
+  }
+
+  .input-group.date  {
+    min-width: 100%;
+  }
+
+  .krajee-datepicker {
+    z-index: 0;
+  }
+}

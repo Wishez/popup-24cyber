@@ -1,0 +1,26 @@
+.threadSorterHead {
+    padding: em(4, 12) em(17, 12) em(8, 12) em(34, 12);
+}
+
+.sorterController {
+
+
+    &_search {
+        min-width: 100px;
+        color: rgba(#333b4e, .7);
+    }
+
+
+    &__label {
+        margin-bottom: 0;
+        margin-right: em(7, 12);
+
+    }
+
+    &__button {
+        min-width: 61px;
+        min-height: 27px;
+        border-radius: 20px !important;
+        padding: 0;
+    }
+}

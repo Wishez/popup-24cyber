@@ -1,0 +1,637 @@
+@import 'config/breakpoints.scss';
+@import 'breakpoint';
+$i: !important;
+.ui-tooltip  {
+    opacity: 1;
+}
+#modal_pop .pop_bot{
+        color: #fff;
+        font-size: 1em;
+        border-bottom: 1px solid #fff;
+}
+#site-reviews  .popE{
+    width: 80.716%;
+    height: 33px !important;
+    margin: 35px 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 0;
+    padding-left: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#site-reviews  .popT{
+    width: 80%;
+    height: 99px;
+    line-height: 22px;
+    margin: 0 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 0;
+    padding: 3px 5px;
+    resize: none;
+}
+#site-reviews  button{
+    width: 150px;
+    height: 33px;
+    line-height: 33px;
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #2dc86f;
+    transition: 0.3s background-color;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#site-reviews  button:hover{
+    cursor: pointer;
+    background-color: #29b062;
+}
+.title {
+    &_news {
+        min-width: 5.2em 
+    }
+    &_logo {
+        min-width: 5.1em
+    }
+}
+@media screen and (min-width: (1200em / 16)) {
+    .block-header{
+        margin-top: 65px;
+        display: table;
+        margin-bottom: 35px;
+    }
+    .block-header > .part{
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .block-header > .part-title{
+        width: 1%;
+        position: relative;
+    }
+    .block-header > .part > .title{
+        display: inline-block;
+        font-family: 'Open-Sans-Extra-Bold';
+        font-size: 35px;
+        line-height: 1;
+        color: #333b4e;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .block-header > .part-line{
+        width: 100%;
+    }
+    .block-header > .part > .line{
+        margin: 0px 10px;
+        height: 1px;
+        background-color: #e5e5e5;
+    }
+    .block-header > .part-games{
+        width: 1%;
+    }
+    .block-header > .part-games > .game-selecter{
+        min-width: 204px;
+    }
+    .main-league{
+        width: 23%;
+        float: left;
+    }
+    .league-cards{
+        float: left;
+        width: 77%;
+        height: 200px;
+        font-size: 0px;
+    }
+    .league-cards > .card{
+        display: inline-block;
+        width:  31%;
+        width: calc((100% - 30px) / 3);
+        margin-left: 10px;
+    }
+    .league-cards > .card:nth-child(n + 4):nth-child(-n + 6){
+        margin-top: 10px;
+    }
+    .news{
+        height: (559em / 16);
+    }
+    .news > .news-block{
+        display: inline-block;
+        height: 100%;
+    }
+    .news > .main-news{
+        width: 49%;
+    }
+    .news >  .news-list{
+        width:  26%;
+        width: calc(100% - 72% - 20px);
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .stream-matches{
+        margin-top: 50px;
+    }
+    .block-header{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .block-header > .part{
+        position: relative;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .block-header > .part > .title{
+        display: inline-block;
+        font-family: 'Open-Sans-Extra-Bold';
+        font-size: 35px;
+        line-height: 1;
+        color: #333b4e;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .block-header > .part-line{
+        display: none;
+    }
+    .block-header > .part-games{
+        margin-top: 20px;
+    }
+    .main-league{
+        width: 100%;
+    }
+    .league-cards{
+        width: 100%;
+    }
+    .league-cards > .card{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .news > .news-block{
+        display: block;
+        height: 560px;
+    }
+}
+.main-league{
+    position: relative;
+    height: 200px;
+    background-color: #1b1a1a;
+    cursor: pointer;
+    background-image: url('https://24cyber.ru/img/logos/ESL_One.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+}
+.main-league > .filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.02))
+}
+.main-league > .name{
+    position: absolute;
+    bottom: 57px;
+    font-family: 'Open-Sans';
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 19px;
+    z-index: 3;
+}
+.main-league > .info{
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    color: #fff;
+    font-size: 15px;
+    z-index: 3;
+}
+.main-league > .info > .date{
+    margin-left: 19px;
+    font-family: 'Open-Sans';
+    line-height: 1;
+    float: left;
+}
+.main-league > .info > .game-icon{
+    width: 13px;
+    height: 13px;
+    float: right;
+    margin-right: 9px;
+    margin-top: 2.5px;
+}
+.main-league > .info > .prize{
+    margin-right: 27px;
+    float: right;
+    font-family: 'Open-Sans-Extra-Bold';
+    font-weight: bold;
+    line-height: 1;
+}
+.league-cards > .card{
+    background-color: #1b1a1a;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 95px;
+    overflow: hidden;
+}
+.league-cards > .card > .hover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open-Sans';
+    color: #fff;
+    background: rgba(45, 26, 26, 0.66);
+    background: linear-gradient(to left, rgba(45, 26, 26, 0.66), rgba(62, 31, 31, 0.33), rgba(170, 0, 0, 0.25), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.60));
+    // opacity: 0;
+    // transition: 0.3s opacity;
+    // @include breakpoint($xs) {
+    //     opacity: 1;
+    // }
+}
+
+.news-data {
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.news-data.hidden {
+    @include breakpoint($xs) {
+        display: block $i;
+    }   
+}
+.card:hover .news-data {
+    opacity: 1;
+}
+// .league-cards > .card > .hover:hover{
+//     opacity: 1;
+// }
+.league-cards > .card > .hover > .name{
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+    width: 155px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.league-cards > .card > .hover > .date{
+    position: absolute;
+    top: 25px;
+    font-size: 14px;
+    right: 17px;
+}
+.league-cards > .card > .hover > .prize{
+    position: absolute;
+    right: 16px;
+    font-size: 14px;
+    bottom: 14px;
+    font-weight: bold;
+}
+.league-cards > .card > .game{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 16px;
+    z-index: 3;
+}
+.raw-news{
+    width: 100%;
+}
+.raw-news > .card{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    height: 95px;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    width:  19%;
+    width: calc((100% - 10px * 4) / 5);
+    background-size: cover;
+    cursor: pointer;
+}
+.raw-news > .card > *{
+    z-index: 2;
+}
+.raw-news > .card > .title{
+    font-family: 'Open-Sans-Semibold';
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    line-height: 1.2;
+    left: 16px;
+    right: 10px;
+    text-shadow: 0px 0px 3px #4e4e4e;
+    overflow: hidden;
+    max-height: 32px;
+}
+.raw-news > .card > .date{
+    font-size: (13em / 16);
+    top: (18em / 13);
+    color: #fff;
+    position: absolute;
+    left: (16em / 13);
+}
+.raw-news > .card > .game{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 15px;
+    right: 15px;
+}
+.raw-news > .card:first-child{
+    margin-left: 0px;
+}
+.news{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.news > .news-block{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0px;
+    cursor: pointer;
+    vertical-align: top;
+}
+.news > .one{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+.news-block > .news-img{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url('https://24cyber.ru/uploads/images/1046629.jpg');
+    background-size: cover;
+    font-family: 'Open-Sans';
+    color: #fff;
+    background-position: center;
+}
+.news-block > .news-img > .filter{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.01));
+}
+.news-block > .news-img > .date{
+    font-size: 13px;
+    line-height: 1;
+    top: 29px;
+    left: 29px;
+    position: absolute;
+    z-index: 3;
+}
+.news-block > .news-img > .title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    bottom: 30px;
+    left: 29px;
+    line-height: 1.2;
+    z-index: 3;
+    padding-right: 10px;
+}
+.news-block > .news-img > .game{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 30px;
+    z-index: 3;
+    top: 29px;
+}
+.news-block > .news-desc{
+    position: relative;
+    width: 100%;
+    min-height: (245em / 16);
+    height: calc(100% - 320px);
+    background-color: #fff;
+}
+.news-block > .news-desc > .desc {
+    position: relative;
+    color: #212121;
+    font-size: (18em / 16);
+    padding: (30em / 18);
+    height: (155em / 18);
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.second-news > .news-desc > .desc{
+    font-size: 16px;
+}
+.news-block > .news-desc > .stats{
+    position: absolute;
+    display: inline-block;
+    bottom: 35px;
+    right: 30px;
+}
+.news-block > .news-desc > .stats > .stat{
+    font-family: 'Open-Sans';
+    font-weight: bold;
+    color: #999999;
+    margin-left: 17px;
+    font-size: 12px;
+    float: left;
+}
+.news-block > .news-desc > .stats > .stat > .fa{
+    font-size: 13px;
+}
+.news > .second-news{
+    width: 23%;
+    margin-left: 10px;
+}
+.news >  .news-list > .card{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #000;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: block;
+}
+.news >  .news-list > .card > *{
+    z-index: 2;
+}
+.x-filter{
+    position: absolute;
+    z-index: 1 !important;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.14));
+    top: 0;
+    left: 0;
+}
+.news >  .news-list > .card > .title{
+    position: absolute;
+    font-family: 'Open-Sans-Semibold', 'Open-Sans';
+    font-size: (18em / 16);
+    color: #fff;
+    bottom: 20px;
+    left: 25px;
+    right: 20px;
+}
+.news >  .news-list > .card > .date{
+    position: absolute;
+    font-size: (15em / 16);
+    color: #fff;
+    top: 30px;
+    left: 25px;
+}
+.raw-news, .news {
+    & .card .date {
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+.news >  .news-list > .card > .game{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    top: 30px;
+}
+.news >  .news-list > .card:first-child{
+    margin-top: 0px;
+}
+
+
+
+.timeMatch {
+    animation: redBlink 2.5s infinite linear;
+}
+
+@keyframes redBlink{
+    0% {
+        color: #333;
+    } 
+    50% {
+        color: #9E0B0F; 
+        text-shadow: 0 0 15px rgba(0, 0, 0, .6);    
+    }
+    100% {
+        color: #333;
+        text-shadow: none;
+    }
+}
+
+.mainBanner {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    display:  flex;  
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size:  1em;
+    height: 8.625em;
+    margin: 3em 0 2em;
+    font-size: .8em;
+    @include breakpoint(max-width 1199px) {
+        margin: 7em 0 -2em;
+
+    }
+    @include breakpoint(max-width 991px) {
+        font-size: .6em;
+        margin: 8em 0 -3em;
+    }
+    @include breakpoint($xs) {
+        margin-right:  1em;
+        margin-left:  1em;
+    }
+    @include breakpoint(max-width 460px) {
+        flex-direction: column;
+        height:  auto; 
+        padding-top: 1.5em;
+        margin-bottom: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: auto;
+        left: 0;
+        z-index: -1;   
+        width:  100%;
+        background: url('/img/share.png') no-repeat center;
+        background-size: cover;
+        padding-bottom:  12.126537785588752196836555360281%;
+        @include breakpoint($xs) {
+            border-radius: 10px;
+            min-height: 87px;
+        }
+        @include breakpoint(max-width 460px) {
+            top: 0;
+            min-height: 175px;
+            background-position: bottom left;
+        }
+    }
+}
+
+.mainBanner__title {
+    margin: 0;
+    font-size: 2.25em;
+    line-height: 1.4;
+    max-width:  50%;
+    transform: translate(20%, 0);
+    @include breakpoint(max-width 640px) {
+        max-width: 60%;
+        transform: translate(5%, 0);
+    }
+    @include breakpoint(max-width 460px) {
+        max-width: 100%;
+        transform: none;
+        text-align: center;
+    }
+}
+.mainBanner__button {
+    font-size:  1.875em;
+    width:  9.4em;
+    max-width:  9.4em;
+    background-color: #2cae62;
+    background: linear-gradient(to right, #2cae62 5%,  #2fc66f 35%, #2fc66f 65%, #2cae62 100%);
+    padding:  0.83333333333333333333333333333333em 0;
+    border: 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .35);
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    &:hover {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+    &:focus {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    &:active {
+        -webkit-transform: scale(1.02);
+        transform: translate(0, 5%);
+    }
+    @include breakpoint(max-width 460px) {
+        align-self: flex-end;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+}

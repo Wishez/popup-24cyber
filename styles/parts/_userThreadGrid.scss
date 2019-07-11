@@ -1,0 +1,60 @@
+.userThreadGrid {
+  @supports (display: grid) {
+    display: grid;
+    align-items: center;
+    grid-gap:15px;
+
+    @include breakpoint($xs-up) {
+      grid-template-columns: 45px 185px 110px 145px;
+    }
+
+    @include breakpoint($xs) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+  &_head {
+    padding: 4px 0 9px;
+  }
+
+  &__quantityMessages {
+    
+    @include breakpoint($xs) {
+      text-align: center;
+    }
+
+    &_row {
+
+      @include breakpoint($xs-up) {
+        padding-left: em(30, 14);
+      }
+    }
+  }
+
+  &__title {
+
+    &_column {
+      text-indent: 11px;
+    }
+  }
+}
+
+.threadsList {
+
+}
+
+.userThreadGridSelect  {
+  @include breakpoint($xs-up) {
+    padding-left: 9px;
+  }
+}
+
+.userThread {
+  padding: 16px 0 18px;
+
+  &:first-child {
+    border-top: 1px solid #e8e8e8;
+  }
+
+}

@@ -1,0 +1,108 @@
+@import "config/_helpers.scss";
+.commentAnswersBlock,
+.commentUserContent {
+    max-width: 710px;
+    margin-top: 0.25em;
+    width: 100%;
+
+    @include breakpoint($sm) {
+        max-width: 580px;
+    }
+}
+.commentUserInfo time  {
+  margin-left: -.7em;
+}
+
+.commentUser {
+    &Content {
+        max-width: 710px;
+        min-height: 187px;
+        padding-bottom: 78px;
+
+        &_answer {
+          max-width: 580px;
+          min-height: 177px;
+        }
+
+        .userPostActions {
+            padding-left: 0.25em;
+            bottom: 32px;
+        }
+    }
+}
+
+.userPostActions {
+    .fa {
+        font-size: 19px;
+    }
+}
+
+.commentTimestamp {
+    color: #888888;
+    padding-bottom: 0.4em;
+
+    @include breakpoint($xxs-up) {
+        margin-left: 5.5em;
+    }
+
+    @include breakpoint($xxs) {
+        margin-left: 2.5em;
+    }
+}
+.userPostAction {
+    &_like {
+        margin-right: 2.4em;
+    }
+
+    &_reply {
+        transform: translate(0.3em, -0.3em);
+
+        .fa {
+            font-size: 14px;
+        }
+    }
+}
+
+.commentController {
+    &__input {
+        border-color: rgba(#333b4e, 0.15);
+    }
+
+    &__button {
+    }
+}
+
+.writeCommentButton {
+    &__button {
+        margin-top: 0.1em;
+    }
+
+    &__icon {
+        font-size: 14px;
+        margin-top: 0.35em;
+        margin-right: 0.75em;
+    }
+}
+
+.comment {
+    padding-top: 1.35em;
+    padding-left: 1.65em;
+    margin-top: 0;
+    min-height: 203px;
+
+    @include breakpoint($xs) {
+        padding-left: 0;
+    }
+}
+
+.newsCommentsBlock {
+    > * {
+        max-width: 849px;
+    }
+
+    margin-top: 1.4em;
+}
+
+.commentsArea {
+    margin-top: 3em;
+}

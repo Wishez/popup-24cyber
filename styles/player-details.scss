@@ -1,0 +1,20 @@
+.player-details{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.player-details .image{
+	height: 280px;
+	background-image: url(https://24cyber.ru/img/logos/MiSeRy_The_Summit_3.jpg);
+	background-size: cover;
+}
+.player-details .player-info{
+	width: 100%;
+	height: 280px;
+	padding-left: 30px;
+	padding-top: 25px;
+}
+.player-details .player-info > .nick-name{
+	color: #2e3648;
+	font-size: 32px;
+	font-family: 'Open-Sans-Semibold';
+}
